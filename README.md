@@ -12,7 +12,7 @@ This project takes those notes and seeks to illustrate the process that goes int
 
 ### The Structure
 
-Each repository is a Django template that can be used as is.  Each template has a guide that outlines the changes made and why I made them.  
+Each repository is a Django template that can be used as is.  Each template has a guide that outlines the changes made and why I made them.  All of these templates will work for Linux and OSX.  I will bring out a Windows version soon.  The reason why they won't work, out of the box, on Windows is because Vagrant requires some extra configuration to work on Windows. I will go over this at a future date. 
 
 ### Who this is for
 
