@@ -4,7 +4,7 @@ This repository contains a series Django starter templates.  Each template can b
 
 ### Motivation
  
-When I started building a template that worked for me, I started by looking at what [others were doing in the django community](https://www.djangopackages.com/grids/g/project-templates/).  My main area of interest was the decision making process that went into them.  So I started to build templates and as I was making them I made some notes.  
+When I started building a template that worked for me, I started by looking at what <a href="https://www.djangopackages.com/grids/g/project-templates/" target="_blank">others were doing in the django community</a>.  My main area of interest was the decision making process that went into them.  So I started to build templates and as I was making them I made some notes.  
 
 I created this repository to illustrate the process that goes into creating a Django template.  I hope that it can be used as a learning tool.   
 
