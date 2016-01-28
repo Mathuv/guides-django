@@ -4,7 +4,7 @@ This repository contains a series Django starter templates.  Each template can b
 
 ### The Optimal Django Setup Environment
 
-The idea of starting my projects with a well thought out, flexible and robust django development environment has always been a focus of mine.  A big part of this is having a solid beginning:  the template.  As I was developing my own templates, I looked at what <a href="https://www.djangopackages.com/grids/g/project-templates/" target="_blank">others were doing in the django community</a> and  reading through whatever I could find.  Fortunatley, I was turned onto  <a href="https://www.twoscoopspress.com/products/two-scoops-of-django-1-8" target="_blank"> Two Scoops of Django</a> early on.  
+The idea of starting my projects with a well thought out, flexible and robust django development environment has always been a focus of mine.  A big part of this is having a solid beginning:  the template.  As I was developing my own templates, I looked at what <a href="https://www.djangopackages.com/grids/g/project-templates/" target="_blank">others were doing in the django community</a> and  reading through whatever I could find.  Fortunately, I was turned onto  <a href="https://www.twoscoopspress.com/products/two-scoops-of-django-1-8" target="_blank"> Two Scoops of Django</a> early on.  
 
 Through a combination of building my own projects and reading projects written by others, I was able to develop my own templates that suited my needs.  Along the way, conscious of the sometimes steep learning curve and lack of practical, step-by-step outlines of how and why people organize their projects the way they do, I made some notes.     
 
