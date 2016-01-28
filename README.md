@@ -14,6 +14,12 @@ This project takes those notes and seeks to illustrate the process that goes int
 
 Each repository is a Django template that can be used as is.  Each template has a guide that outlines the changes made and why I made them.  
 
+### Who this is for
+
+At the moment, this project is geared towards <a href="http://zedshaw.com/2015/06/16/early-vs-beginning-coders/" target="_blank">early</a> to intermediate Django developers.  What is an early Django developer? At this point, you have already completed some tutorials like the <a href="https://docs.djangoproject.com/en/1.9/intro/tutorial01/" target="_blank">official Django tutorial</a> or <a href="http://tutorial.djangogirls.org/en/index.html" target="_blank">something similar</a> and maybe completed a small sized project with Django - like a blog.  Still don't know if you are an early Django developer?  Can you describe, with ease and clarity, what the `startproject` command does without referencing the Django documentation?  Yes?  You are good to go.
+
+**NOTE:** Even if you haven't done anything with Django, this can still be a useful read.  Just because your a beginner does not mean you won't get anything out of it.  Give it a try!
+
 ### Goals
 
 If this helps someone learn Django a little better, mission accomplished.  Thus, I am hoping that I can add something to the Django community and in support of this goal, I have tried to focus on a few things.
