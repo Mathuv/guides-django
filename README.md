@@ -4,7 +4,7 @@ An ideal local development environment is about advocating a system that allows 
 
 ### The Optimal Django Setup Environment
 
-Over time I have developed several Django starters which I use to start my projects.  At a certain point, I realized that in developing a system that works for me, I have accumulated a lot of notes.  I recently starting reading over my notes and instantly remembered that there can be a steep barrier to entry in the web development community.  I also remembered that there were a lot of generous people who shared their knowledge along the way and without them I couldn't have gotten to where I am.  Thus, I decided to take my notes and make them available to everyone.
+Over time I have developed several Django starters which I use to start my projects.  At a certain point, I realized that in developing a system that works for me, I have accumulated a lot of notes.  I recently started reading over my notes and instantly remembered the sometimes steep barrier to entry in the web development community.  I also remembered that there were a lot of generous people who shared their knowledge with me along the way and without them I couldn't have gotten to where I am.  Thus, I decided to take my notes and make them available to everyone.
 
 Each of the directories in this repo is meant to illustrate the minimum requirements involved in setting up an effective local Django development environment.  Each directory is called a starter.  The idea is that each starter includes:
 
@@ -15,7 +15,7 @@ Each of the directories in this repo is meant to illustrate the minimum requirem
 The following starters are currently available:
 
 **starter_1**
-> Quickly setup a vagrant machine and initialize Django project using `django-admin startproject`
+> Quickly setup a vagrant machine and initialize a Django project using `django-admin startproject`
 
 
 
