@@ -12,6 +12,8 @@ Each of the directories in this repo is meant to illustrate the minimum requirem
 * A Django Project Layout
 * An Exploration of the decisions that went into developing each starter
 
+I have also included an `instructions for immediate use` at the top of each starters README.  I did this so that you could use them right away and not need to follow my guides.
+
 The following starters are currently available:
 
 **starter_1**

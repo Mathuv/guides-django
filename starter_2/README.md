@@ -20,17 +20,45 @@ We will run through the following steps in this guide:
 * Create your provisioning scripts
 * Tell Vagrant to run your provisioning scripts
 
+
+### Instruction for Immediate Use
+
+In order to use this right away, you will need to do a few things.
+
+1.  Create an empty folder where you project is going to live on your local
+    
+    `mkdir <project_folder>`
+
+2.  `cd` into the folder you just created
+
+    `cd <project_folder>`
+
+3.  Clone this repository
+
+4.  Make the `starter_2` template the HEAD
+    
+    `git filter-branch --prune-empty --subdirectory-filter starter_2/django-starter HEAD`
+
+Your directory structure should now look like the following.  Now you can go through and cofigure it to work for your project.  Is this the best way to do this, no.  That is why I wrote more starters.  But in the event you want to do it this way, who am I to stop you?
+
+        .
+        ├── Vagrantfile
+        └── taye_diggs
+            ├── db.sqlite3
+            ├── manage.py
+            └── taye_diggs
+
 ### Step-By-Step
 
 We are going to run through the following steps in this guide:
 
 1. Create the folder where you want this project to live.  I am going to call mine `django-starter`
 
-    `mkdir django-starter`
+    `mkdir django_starter`
 
-2. Move into `django-starter` 
+2. Move into `django_starter` 
 
-    `cd django-starter`
+    `cd django_starter`
 
 3. Create your vagrant file
 
@@ -80,7 +108,7 @@ We are going to run through the following steps in this guide:
 9. Tell vagrant which folders to sync
 
         # ...
-        config.vm.synced_folder ".", "/home/vagrant/django-starter"
+        config.vm.synced_folder ".", "/home/vagrant/django_starter"
 
     > This is going to sync everything inside of this directory into a 
     directory inside of your vagrant machine called `/home/vagrant/django-starter`.  
@@ -148,6 +176,9 @@ We are going to run through the following steps in this guide:
         echo -e "\e[1;36m Installing Django"
         pip install django
 
+        # INFO: move into django project
+        cd django_starter
+
         # INFO: initialize virtualenvironment
         echo -e "\e[1;36m Create django project layout zooey_deschanel"
         django-admin startproject zooey_deschanel
@@ -158,7 +189,7 @@ We are going to run through the following steps in this guide:
             # login to virtualenv
             source /home/vagrant/.virtualenvs/zooey_deschanel/bin/activate
             # project directory
-            cd zooey_deschanel
+            cd django_starter/zooey_deschanel
         EOF
 
         # INFO: move into django project
@@ -167,6 +198,8 @@ We are going to run through the following steps in this guide:
         # INFO: build initial Django DB tables
         echo -e "\e[1;36m migrating Django DB"
         python manage.py migrate
+
+
 
     > Discussion:  The above is the entire provisioning script.  I think it is important to type the above by hand. Further, it is also important to ask yourself what you are typing and why.  So you do not miss anything, here are a few questions that you should be able to answer at the end of this starter.  The point of this practice is to see how well you understand these concepts.  Remember, "If you can't explain it simply, you don't undertand it well enough" - Albert Einstein
     

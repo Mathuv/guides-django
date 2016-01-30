@@ -44,6 +44,9 @@ source /home/vagrant/.virtualenvs/zooey_deschanel/bin/activate
 echo -e "\e[1;36m Installing Django"
 pip install django
 
+# INFO: move into django project
+cd django_starter
+
 # INFO: initialize virtualenvironment
 echo -e "\e[1;36m Create django project layout zooey_deschanel"
 django-admin startproject zooey_deschanel
@@ -54,7 +57,7 @@ cat << EOF >> /home/vagrant/.bashrc
     # login to virtualenv
     source /home/vagrant/.virtualenvs/zooey_deschanel/bin/activate
     # project directory
-    cd zooey_deschanel
+    cd django_starter/zooey_deschanel
 EOF
 
 # INFO: move into django project

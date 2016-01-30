@@ -11,15 +11,41 @@ You are going to need to install the following before starting
 
 > Discussion:  Why vagrant?  I build all my projects with Vagrant.  Using this setup, I am able to achieve a higher level of parity with my production environments and I can easily get technical and non-technical people alike ramped up on my projects quickly and easily.
 
+### Instruction for Immediate Use
+
+In order to use this right away, you will need to do a few things.
+
+1.  Create an empty folder where you project is going to live on your local
+    
+    `mkdir <project_folder>`
+
+2.  `cd` into the folder you just created
+
+    `cd <project_folder>`
+
+3.  Initialize git
+    
+    `git filter-branch --prune-empty --subdirectory-filter starter_1/django-starter HEAD`
+
+Your directory structure should now look like the following.  Now you can go through and cofigure it to work for your project.  Is this the best way to do this, no.  That is why I wrote more starters.  But in the event you want to do it this way, who am I to stop you?
+
+        .
+        ├── Vagrantfile
+        └── taye_diggs
+            ├── db.sqlite3
+            ├── manage.py
+            └── taye_diggs
+
+
 ### Step-By-Step
 
 1. Create the folder where you want this project to live.  I am going to call mine `django-starter`
 
-    `mkdir django-starter`
+    `mkdir django_starter`
 
-2. Move into `django-starter` 
+2. Move into `django_starter` 
 
-    `cd django-starter`
+    `cd django_starter`
 
 3. Create your vagrant file
 
