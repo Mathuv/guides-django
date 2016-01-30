@@ -190,7 +190,7 @@ We are going to run through the following steps in this guide:
 
     > You are going to notice that the output in your terminal is a little different this time.  It is going to start spitting out a lot of text.  It will look something like this.
     
-    ![Expected outcome](../resources/images/starter_2_first_provision.png)
+    ![Expected outcome](../resources/images/starter_2 _first_provision.png)
 
     **NOTE:** If something goes wrong, read the error messages in your terminal.  Try to resolve the issue.  They are almost always very informative.  Once you make the changes you think will fix the problem, run `vagrant provision` which will tell vagrant to run your provision script again.  Once you resolve the issues, I would recommend `halting` your vagrant environment and then `detroying` it.  You can then run `vagrant up` again and test to make sure it still works.
 

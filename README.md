@@ -18,9 +18,6 @@ The following starters are currently available:
 > Quickly setup a vagrant machine and initialize a Django project using `django-admin startproject`
 
 
-
- 
-
 ### Who this is for
 
 At the moment, this project is geared towards <a href="http://zedshaw.com/2015/06/16/early-vs-beginning-coders/" target="_blank">early</a> to intermediate Django developers.  What is an early Django developer? At this point, you have already completed some tutorials like the <a href="https://docs.djangoproject.com/en/1.9/intro/tutorial01/" target="_blank">official Django tutorial</a> or <a href="http://tutorial.djangogirls.org/en/index.html" target="_blank">something similar</a> and maybe completed a small sized project with Django - like a blog.  Still don't know if you are an early Django developer?  Can you describe, with ease and clarity, what the `startproject` command does without referencing the Django documentation?  Yes?  You are good to go.
