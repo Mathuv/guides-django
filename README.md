@@ -17,6 +17,9 @@ The following starters are currently available:
 **starter_1**
 > Quickly setup a vagrant machine and initialize a Django project using `django-admin startproject`
 
+**starter_2**
+> Starter_1 + provisioning script
+
 
 ### Who this is for
 
