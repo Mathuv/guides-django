@@ -1,18 +1,25 @@
 # Django Starters
 
-This repository contains a series Django starter templates.  Each template can be used as a starting point for your project.  The first template is an almost exact replica of the `django-admin startproject` template.  Each subsequent template adds additional configurations to `startproject`.  
+An ideal local development environment is about advocating a system that allows you to work in a clear, reproduceable and maintainable way.  This repository explores my approach to setting up a local development environment for my Django projects. 
 
 ### The Optimal Django Setup Environment
 
-The idea of starting my projects with a well thought out, flexible and robust django development environment has always been a focus of mine.  A big part of this is having a solid beginning:  the template.  As I was developing my own templates, I looked at what <a href="https://www.djangopackages.com/grids/g/project-templates/" target="_blank">others were doing in the django community</a> and  reading through whatever I could find.  Fortunately, I was turned onto  <a href="https://www.twoscoopspress.com/products/two-scoops-of-django-1-8" target="_blank"> Two Scoops of Django</a> early on.  
+Over time I have developed several Django starters which I use to start my projects.  At a certain point, I realized that in developing a system that works for me, I had accumulated a lot of notes.  Only after I read over all of them did I realize that getting to the point I am at was not easy.  Hell, it's a relatively steep learning curve.  Thus, I decided to take my notes and make them available to everyone.
 
-Through a combination of building my own projects and reading projects written by others, I was able to develop my own templates that suited my needs.  Along the way, conscious of the sometimes steep learning curve and lack of practical, step-by-step outlines of how and why people organize their projects the way they do, I made some notes.     
+Each of the directories in this repo is meant to illustrate the minimum requirements involved in setting up an effective local Django development environment.  Each directory is called a starter.  The idea is that each starter includes:
 
-This project takes those notes and seeks to illustrate the process that goes into creating a Django template.   
+* A configured Vagrantfile
+* A Django Project Layout
+* An Exploration of the decisions that went into developing each starter
 
-### The Structure
+The following starters are currently available:
 
-Each repository is a Django template that can be used as is.  Each template has a guide that outlines the changes made and why I made them.  All of these templates will work for Linux and OSX.  I will bring out a Windows version soon.  The reason why they won't work, out of the box, on Windows is because Vagrant requires some extra configuration to work on Windows. I will go over this at a future date. 
+**starter_1**
+> Quickly setup a vagrant machine and initialize Django project using `django-admin startproject`
+
+
+
+ 
 
 ### Who this is for
 
