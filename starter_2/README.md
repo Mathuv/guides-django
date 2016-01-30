@@ -2,7 +2,7 @@
 
 In `starter_1` we intialized a vagrant machine, installed and configued virtualenvwrapper in our VM and then setup our Django project.  If we wanted to start a new project we would have to go through all of those steps again.  That is a very manual process.  Instead, this starter is going to show you how to setup a provisioning script, which will be run by vagrant.  
 
-By setting up a provisioning script we ensure that we do not have to repeat the repetitive tasks that are `starter_1`'s steps 12-22.  In addition, we remove several points of failure.  I.E. automating allows us to avoid the opportunity to make mistakes.
+By setting up a provisioning script we ensure that we do not have to repeat steps 12-22 from `starter_1`.  In addition, we remove several points of failure.  I.E. automating allows us to avoid the opportunity to make mistakes.
 
 ### Housekeeping
 
