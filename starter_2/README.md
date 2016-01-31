@@ -174,7 +174,7 @@ We are going to run through the following steps in this guide:
 
         # INFO: initialize virtualenvironment
         echo -e "\e[1;36m Installing Django"
-        pip install django
+        pip install 'django>=1.9,<1.10'
 
         # INFO: move into django project
         cd django_starter

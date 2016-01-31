@@ -66,7 +66,7 @@ source ${virtualenv_dir}/${project_name}/bin/activate
 
 # INFO: initialize virtualenvironment
 logit "Installing Django"
-pip install django
+pip install 'django>=1.9,<1.10'
 
 # INFO: move into django project
 logit "Changing Directory to ${repo_name}"

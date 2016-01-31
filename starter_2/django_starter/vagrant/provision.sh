@@ -42,7 +42,7 @@ source /home/vagrant/.virtualenvs/zooey_deschanel/bin/activate
 
 # INFO: initialize virtualenvironment
 echo -e "\e[1;36m Installing Django"
-pip install django
+pip install 'django>=1.9,<1.10'
 
 # INFO: move into django project
 cd django_starter

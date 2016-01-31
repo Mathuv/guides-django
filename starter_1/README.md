@@ -169,7 +169,7 @@ Your directory structure should now look like the following.  Now you can go thr
 
 17. Install Django
 
-    `pip install django`
+    `pip install 'django>=1.9,<1.10'`
 
     > At the time of this writing, this will install Django 1.9.1
 
