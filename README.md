@@ -22,6 +22,9 @@ The following starters are currently available:
 **starter_2**
 > Starter_1 + provisioning script
 
+**starter_3**
+> Starter_3 + improved provisioning script
+
 
 ### Who this is for
 
