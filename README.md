@@ -6,15 +6,14 @@ An ideal local development environment is about advocating a system that allows 
 
 Over time I have developed several Django starters which I use to start my projects.  At a certain point, I realized that in developing a system that works for me, I accumulated a lot of notes.  I recently started reading over my notes and instantly remembered the sometimes steep barrier to entry in the web development community.  I also remembered that there were a lot of generous people who shared their knowledge with me along the way and without them I couldn't have gotten to where I am.  Thus, I have taken my notes, cleaned them up and made them available in the form of guides within this repo.
 
-Each of the directories in this repo is meant to illustrate the minimum requirements involved in setting up an effective local Django development environment.  Each directory is called a starter.  The idea is that each starter includes:
+Each of the directories in this repo is meant to illustrate the process that goes into developing a Django Project template.  I am going to outline how to build `templates` that be used to start a project as easily and hastle free as possible.  Each template is made up of small guides called `starters`. 
 
-* A configured Vagrantfile
-* A Django Project Layout
-* An Exploration of the decisions that went into developing each starter
+Here are the Templates and Starters currently available 
 
-I have also included an `instructions for immediate use` at the top of each starters README.  I did this so that you could use them right away and not need to follow my guides.
+##### TEMPLATE 1:  VAGRANT + PROVISIONING + COOKIECUTTER
 
-The following starters are currently available:
+* development environment
+* project layout
 
 **starter_1**
 > Quickly setup a vagrant machine and initialize a Django project using `django-admin startproject`
