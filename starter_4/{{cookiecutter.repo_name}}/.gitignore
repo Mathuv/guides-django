@@ -1,0 +1,5 @@
+# sqlite3
+/zooey_deschanel/db.sqlite3
+
+# virtual environments
+/.vagrant

@@ -25,6 +25,9 @@ The following starters are currently available:
 **starter_3**
 > Starter_3 + improved provisioning script
 
+**starter_4**
+> Starter_3 + improved provisioning script + cookiecutter
+
 
 ### Who this is for
 
