@@ -2,7 +2,8 @@
 
 For a modern Django setup, you need an `environment`, `project layout` and `tooling system`.  The process of setting up this workflow is mainly about creating your directory structure and configuring everything correctly.  This process can be tedious and error prone.  Our saving grace comes in the form of `starters`.  Thee web development community is very fond of these and as a result, they go by many names:  `seeds`, `templates`, `boilerplate`, `cookiecutters` etc.    
 
-The idea behind a `starter` is that it contains the exact project layout and configurations required to start new projects quickly.  Generally speaking, `starters` are better known for focusing on the `project layout` portion of the project.  What I want to provide with these starters is the other half of this process:  the `environment` and `tooling system`.  Thus, `Django starters` provides project skeletons that can be used to setup new Django projects.  Each one is designed to be reusable, confiugrable and promote best practices.     
+The idea behind a `starter` is that it contains the exact project layout and configurations required to start new projects quickly.  Generally speaking, `starters` are better known for focusing on the `project layout` portion of the project.  What I want to provide with these starters is the other half of this process:  the `environment` and `tooling system`.  Thus, `Django starters` provides project skeletons that can be used to setup new Django projects.  Each one is designed to be reusable, confiugrable and promote best practices. 
+
 Each project skeleton is called a cookiecutter.  Each cookiecutter will have a series of guides that explore the why's and wherefore's that go into this process.  
 
 ### How to Use
