@@ -1,32 +1,22 @@
 # Django Starters
 
-For a modern Django setup, you need an `environment`, `project layout` and `tooling system`.  The process of setting up this workflow is mainly about creating your directory structure and configuring everything correctly.  This process can be tedious and error prone.  Our saving grace comes in the form of `starters`.  Thee web development community is very fond of these and as a result, they go by many names:  `seeds`, `templates`, `boilerplate`, `cookiecutters` etc.    
+Django Starters will walk users through the process of creating you're own Django Templates that can be used to easily start new Django web development projects.  Specifically, we will focus on the minimum requirements for setting up a development environment, advanced project layouts, settings and tooling systems. 
 
-The idea behind a `starter` is that it contains the exact project layout and configurations required to start new projects quickly.  Generally speaking, `starters` are better known for focusing on the `project layout` portion of the project.  What I want to provide with these starters is the other half of this process:  the `environment` and `tooling system`.  Thus, `Django starters` provides project skeletons that can be used to setup new Django projects.  Each one is designed to be reusable, confiugrable and promote best practices. 
+## Starters
 
-Each project skeleton is called a cookiecutter.  Each cookiecutter will have a series of guides that explore the why's and wherefore's that go into this process.  
+This repo has many subdirectorie called `starters`.  Each `starter` is a guide that is going to walk through one concept or technique.  For example, See below for an overview of the starters currently available.
 
-### How to Use
+**starter_01**
+> This guide will show users how to start using vagrant and django
 
-In this repo, I refer to the finished project templates as `cookiecutters`.  Each cookiecutter is backed by a series of guides.  I recommend starting at the first `cookiecutter`  to get a good understanding of what is happeing here.  Below is an overview of the cookiecutters available.
+**starter_02**
+> This guide will show users how to make a provisioning script for Vagrant
 
+**starter_03**
+> This guide will show users how to make a smarter provisioning script for vagrant
 
-##### COOKIECUTTER 1:  VAGRANT + PROVISIONING + COOKIECUTTER
-
-* development environment
-* default django project layout
-
-**starter_1**
-> Quickly setup a vagrant machine and initialize a Django project using `django-admin startproject`
-
-**starter_2**
-> Starter_1 + provisioning script
-
-**starter_3**
-> Starter_3 + improved provisioning script
-
-**starter_4**
-> Starter_3 + improved provisioning script + cookiecutter
+**starter_04**
+> This guide will introduce users to a scaffolding tool called cookiecutter
 
 
 ### Who this is for
