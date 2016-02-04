@@ -25,7 +25,7 @@ Anyone who wants to learn about Django web development.  This repo is a refined 
 
 ### Goals
 
-This repo is a way for me to give back to the web development community.  For so long I have been able to benefit from work that others freely make available online.  In doing so, I will strive to achieve the following: 
+This repo is a way for me to give back to the web development community.  For so long I have been able to benefit from work that others freely make available online.  I want to acknowledge their efforts by sharing some of my own experiences.  In this process, I have a few goals that I want to work towards:
 
 2.  **Open Discussion:**  I am going to make choices that work for me, but I want readers to have, at the least, the opporunity to see that there are other choices.  Therefore, I will attempt to have open discussion in my writing whenever possible exploring alternatives or clarifying what appear to be vague points.  
 3.  **Maintenance:**  The first thing that I do before reading any web development guides is check the date.  Is it older than 6 months?  1 year?  It may still be useful, but depending on the technology it could be out of date.  I don't want that to happen to this repo so I will commit time to creating a process to test the code in this repo every few months to keep it up to date.  
