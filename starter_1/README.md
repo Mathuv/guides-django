@@ -1,6 +1,8 @@
 # Starter 1
 
-`Starter_1` is going to introduce you to what I consider a minimal and strong foundation for django, and really, any web development project.  This starter features the template you are going to use, a simple vagrant setup and virtualenvwrapper.  Further, I have a step-by-step section that walks you through how to create this template manually.  I recommend typing everything out as I do to get a better understanding for what is happening.
+A Virtual Machine (VM) is software that allows you to run oher operating systems on your coputer in a separate window.  For example, you main machine is OSX, but you need Linux.  You can create a Virtual Machine and install Linux on it.  
+
+Developers like to use VM's because they allow us to simulate production environments, save time when on boarding new developers and ensure consistency between environments. While VM's are super useful, they can be tricky to setup.  This is where Vagrant comes in.  Vagrant allows us to easily configure and manage our VM's.  `Starter_1` is going to show you how to setup a VM using Vagrant.
 
 ### Housekeeping
 
