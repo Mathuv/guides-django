@@ -70,7 +70,7 @@ pip install 'django>=1.9,<1.10'
 
 # INFO: move into django project
 logit "Changing Directory to ${repo_name}"
-cd django_starter
+cd ${repo_name}
 
 # INFO: initialize virtualenvironment
 logit "Create django project layout for ${project_name}"
