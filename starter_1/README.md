@@ -1,6 +1,6 @@
 # Starter 1
 
-A Virtual Machine (VM) is software that allows you to run oher operating systems on your coputer in a separate window.  For example, you main machine is OSX, but you need Linux.  You can create a Virtual Machine and install Linux on it.  
+A Virtual Machine (VM) is software that allows you to run oher operating systems on your coputer in a separate window.  For example, your main machine is OSX, but you need to use Linux.  You can create a Virtual Machine and install Linux on it.  
 
 Developers like to use VM's because they allow us to simulate production environments, save time when on boarding new developers and ensure consistency between environments. While VM's are super useful, they can be tricky to setup.  This is where Vagrant comes in.  Vagrant allows us to easily configure and manage our VM's.  `Starter_1` is going to show you how to setup a VM using Vagrant.
 
