@@ -54,7 +54,17 @@ In this step-by-step we are going to add the following:
         project_name="zooey_deschanel"
         virtualenv_dir="/home/vagrant/.virtualenvs"
 
-4. Using those variables you just created, You can configure your `provision.sh` to look like mine.  Please note the difference between the `repo` and the `projects` variables as these are easy to misconfigure and a pain to debug.
+4. Using those variables you just created, You can configure your `provision.sh` to look like mine.  Please note the difference between the `repo` and the `projects` variables as these are easy to misconfigure and a pain to debug.  Below, I specify which files should be changed and how:
+
+        mkvirtualenv ${repo_name}
+
+        source ${virtualenv_dir}/${project_name}/bin/activate
+
+        source ${virtualenv_dir}/${repo_name}/bin/activate
+
+        source ${virtualenv_dir}/${project_name}/bin/activate
+
+        source ${virtualenv_dir}/${repo_name}/bin/activate
 
 5. Find all instance of `/home/vagrant/.virtualenvs` and replace with `${virtualenv_dir}`.  The exception to this is the line `sed -i '11i export WORKON_HOME=/home/vagrant/.virtualenvs' /home/vagrant/.profile`.  Leave that one as is for now.  If you get a little lost, please refer to the `provision.sh` script inside of this folder.
 

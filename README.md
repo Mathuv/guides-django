@@ -18,6 +18,8 @@ This repo has many subdirectories called `starters`.  Each `starter` is a guide 
 **starter_04**
 > This guide will introduce users to a scaffolding tool called cookiecutter
 
+**starter_05**
+> This guide will show users how to use cookiecutter to build a simple django project layout
 
 ### Who this is for
 
