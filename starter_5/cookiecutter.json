@@ -1,0 +1,6 @@
+{
+    "repo_name": "django_starter",
+    "project_name": "taye_diggs",
+    "django_default_settings": "config.settings",
+    "virtualenv_dir_path": "/home/vagrant/.virtualenvs"
+}

@@ -58,11 +58,11 @@ source /home/vagrant/.profile
 
 # INFO: initialize virtualenvironment
 logit "Creating project virtual environment..."
-mkvirtualenv ${project_name}
+mkvirtualenv ${repo_name}
 
 # INFO: activate virtualenv
 logit "Activate virtual environment"
-source ${virtualenv_dir}/${project_name}/bin/activate
+source ${virtualenv_dir}/${repo_name}/bin/activate
 
 # INFO: initialize virtualenvironment
 logit "Installing Django"
@@ -80,7 +80,7 @@ django-admin startproject ${project_name}
 logit "Configuring .bashrc"
 cat << EOF >> /home/vagrant/.bashrc
     # login to virtualenv
-    source ${virtualenv_dir}/${project_name}/bin/activate
+    source ${virtualenv_dir}/${repo_name}/bin/activate
     # project directory
     cd ${repo_name}/${project_name}
 EOF

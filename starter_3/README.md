@@ -54,7 +54,9 @@ In this step-by-step we are going to add the following:
         project_name="zooey_deschanel"
         virtualenv_dir="/home/vagrant/.virtualenvs"
 
-4. Using those variables you just created, replace every instance of `zoey_deschanel` with `${project_name}`.  Find all instance of `/home/vagrant/.virtualenvs` and replace with `${virtualenv_dir}`.  The exception to this is the line `sed -i '11i export WORKON_HOME=/home/vagrant/.virtualenvs' /home/vagrant/.profile`.  Leave that one as is for now.  If you get a little lost, please refer to the `provision.sh` script inside of this folder.
+4. Using those variables you just created, You can configure your `provision.sh` to look like mine.  Please note the difference between the `repo` and the `projects` variables as these are easy to misconfigure and a pain to debug.
+
+5. Find all instance of `/home/vagrant/.virtualenvs` and replace with `${virtualenv_dir}`.  The exception to this is the line `sed -i '11i export WORKON_HOME=/home/vagrant/.virtualenvs' /home/vagrant/.profile`.  Leave that one as is for now.  If you get a little lost, please refer to the `provision.sh` script inside of this folder.
 
 At this point, that should be everything. So what did we do?  By going through the provision script and making it smarter we made it so that we can now use this `starter_3` as a full fledged starting point for Django.  Everytime we want to spin up a django development evironment all we have to do is use the folder structure in this project, go into the `provisionscript` and change the config variables.  We will also need to go to the `Vagrantfile` and change the line that says `config.vm.synced_folder ".", "/home/vagrant/django_starter"` and change `django_starter` to whatever your repo name is.  That is now considerably less work that needs to be done, but at the same time, couldn't we just set it up so we could manage our projects configurations from just one file?
 

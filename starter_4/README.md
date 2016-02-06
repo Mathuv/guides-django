@@ -104,7 +104,27 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
         project_name="{{ cookiecutter.project_name }}"
         virtualenv_dir="{{ cookiecutter.virtualenv_dir_path }}"
 
-10.  Cool, that should be everything.  Okay.  Lets see if this worked.  Go into your terminal and run the following command:
+10.  Now, there are also some things that need to be changed in the rest of the `provisions.sh`.  
+
+        # before
+        mkvirtualenv ${project_name}
+
+        # after
+        mkvirtualenv ${repo_name}
+
+        # before
+        source ${virtualenv_dir}/${project_name}/bin/activate
+
+        # after
+        source ${virtualenv_dir}/${repo_name}/bin/activate
+
+        # before
+        source ${virtualenv_dir}/${project_name}/bin/activate
+
+        # after
+        source ${virtualenv_dir}/${repo_name}/bin/activate
+
+11.  Cool, that should be everything.  Okay.  Lets see if this worked.  Go into your terminal and run the following command:
 
         `cookiecutter starter_4`
 

@@ -2,9 +2,9 @@
 # CONFIGS
 #-------------------------------------------------------------
 
-repo_name="django_starter"
-project_name="zooey_deschanel"
-virtualenv_dir="/home/vagrant/.virtualenvs"
+repo_name="{{ cookiecutter.repo_name }}"
+project_name="{{ cookiecutter.project_name }}"
+virtualenv_dir="{{ cookiecutter.virtualenv_dir_path }}"
 log_color="\e[1;36m"
 
 
@@ -57,7 +57,7 @@ source /home/vagrant/.profile
 #-------------------------------------------------------------
 
 # INFO: initialize virtualenvironment
-logit "Creating project virtual environment..."
+logit "Creating ${repo_name} virtual environment..."
 mkvirtualenv ${repo_name}
 
 # INFO: activate virtualenv
@@ -69,12 +69,8 @@ logit "Installing Django"
 pip install 'django>=1.9,<1.10'
 
 # INFO: move into django project
-logit "Changing Directory to ${repo_name}"
-cd django_starter
-
-# INFO: initialize virtualenvironment
-logit "Create django project layout for ${project_name}"
-django-admin startproject ${project_name}
+logit "Changing ${repo_name} folder"
+cd ${repo_name}
 
 # INFO: log user into virtualenv when they ssh into VM
 logit "Configuring .bashrc"
