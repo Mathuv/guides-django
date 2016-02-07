@@ -77,6 +77,25 @@ To begin this process, lets start with the directories labelled `src`.  There ar
 │       └── wsgi.py
 ```
 
+However we still have a problem.  When we run `startproject` it give us a repo and a project within that.  In our cookiecutter, we already have the repo and we are defining our own project.  This means that the `config` directory and the `manage.py` file should be a directory level higher.  Lets move then so they look like this:
+
+```
+├── starter_5
+│   ├── README.md
+│   ├── cookiecutter.json
+│   └── {{cookiecutter.repo_name}}
+│       ├── Vagrantfile
+│       ├── config
+│       │   ├── __init__.py
+│       │   ├── settings.py
+│       │   ├── urls.py
+│       │   └── wsgi.py
+│       ├── manage.py
+│       ├── vagrant
+│       │   └── provision.sh
+│       └── src
+```
+
 Now that is complete, here are the things you will need to change to successfully refactor this project layout into a cookiecutter:
 
 1.  Update src/manage.py
