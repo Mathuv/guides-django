@@ -6,20 +6,23 @@ Django Starters will walk users through the process of creating their own Django
 
 This repo has many subdirectories called `starters`.  Each `starter` is a guide that is going to walk through one concept or technique.  What follows is an overview of the `starters` currently available.  `starter`'s 1-3 can be seen as one offs.  `starter 4 +` are actualy cookiecutter templates that can be used to build django projects right away.  Here is an overview of the templates currently available.
 
-**starter_01**
+**starter_1**
 > This guide will show users how to start using vagrant and django
 
-**starter_02**
+**starter_2**
 > This guide will show users how to make a provisioning script for Vagrant
 
-**starter_03**
+**starter_3**
 > This guide will show users how to make a smarter provisioning script for vagrant
 
-**starter_04**
+**starter_4**
 > This guide will introduce users to a scaffolding tool called cookiecutter
 
-**starter_05**
+**starter_5**
 > This guide will show users how to use cookiecutter to build a simple django project layout
+
+**starter_6**
+> This guide will show users envrionment variables and optimized settings 
 
 ### Who this is for
 

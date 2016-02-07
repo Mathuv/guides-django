@@ -1,4 +1,4 @@
-# Starter 6
+# Starter 5
 
 Just like we created the cookiecutter for `starter_4`, we are going to create a cookiecutter for the project layout.  Now, we can keep generating the project layout using the `startproject` command, but we want to develop our own project structure and use `cookiecutter` to generate it.  To start, we are going to turn the project layout created by `startproject` into a cookiecutter.
 
