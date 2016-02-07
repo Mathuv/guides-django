@@ -96,6 +96,24 @@ However we still have a problem.  When we run `startproject` it give us a repo a
 │       └── src
 ```
 
+This new structure change means that we have to update our `provisions.sh`.  Update the lines that look like the following:
+
+**before**
+cd /home/vagrant/${project_name}
+
+**after**
+cd /home/vagrant/${repo_name}
+
+**before**
+logit "Changing to ${project_name} directory"
+cd ${project_name}
+
+**after**
+logit "Changing to ${project_name} directory"
+cd /home/vagrant/${repo_name}
+
+``` 
+
 Now that is complete, here are the things you will need to change to successfully refactor this project layout into a cookiecutter:
 
 1.  Update src/manage.py

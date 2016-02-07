@@ -730,8 +730,7 @@ Alright, now we will be able to use the `cookiecutter` CLI tool and create a pro
     
     `python manage.py runserver 0.0.0.0:8000`
 
-
-
+**GOTCHA:** If you typed everything by hand and you believe the `provison.sh` may not be working correctly, please check my script in this repo and read carefully.  I believe lines 80 and 85 could be problem spots for people.  I have to go over my step-by-step again and ensure it does not lead followers of this guide astray.  
 
 
 

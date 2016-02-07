@@ -77,12 +77,12 @@ cat << EOF >> /home/vagrant/.bashrc
     # login to virtualenv
     source ${virtualenv_dir}/${repo_name}/bin/activate
     # project directory
-    cd /home/vagrant/${repo_name}
+    cd ${repo_dir}
 EOF
 
 # INFO: move into django project
 logit "Changing to ${repo_name} directory"
-cd ${repo_name}
+cd ${repo_dir}
 
 # INFO: build initial Django DB tables
 logit "Migrating Django DB"
