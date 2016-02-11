@@ -12,7 +12,7 @@ We will pick up where we left off with the `starter_6` cookiecutter.  If you are
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_5` template the HEAD
+3.  Make the `starter_6` template the HEAD
     
     `git filter-branch --subdirectory-filter starter_6 HEAD-- --all`
 

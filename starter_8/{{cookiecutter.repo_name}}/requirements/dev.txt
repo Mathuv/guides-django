@@ -1,0 +1,8 @@
+# Dependencies for the dev environment
+-r base.txt
+
+# test tools
+django-extensions
+
+# debug tools
+django-debug-toolbar
