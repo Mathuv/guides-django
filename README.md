@@ -24,6 +24,9 @@ This repo has many subdirectories called `starters`.  Each `starter` is a guide 
 **starter_6**
 > This guide will show users envrionment variables and optimized settings 
 
+**starter_7**
+> This guide will show users how to configure Django to use Postgres
+
 ### Who this is for
 
 Anyone who wants to learn about Django web development.  This repo is a refined version of the notes that I took when I started learning Django.  I hope that it can save you some time and questions and provide a quickstart into exploring some of the more advanced offerings of web development.  
