@@ -223,7 +223,9 @@ done
 * PYTHON-DEV: Python header files are included in this package, among other modules
 
 [Overview of the packages we are installing](http://www.postgresql.org/download/linux/debian/)
+
 [The additional modules that come with postgres-contrib](http://www.postgresql.org/docs/9.1/static/contrib.html)
+
 [Requirements for compiling Psycopg on linux](http://initd.org/psycopg/docs/install.html)
 
 Now that our software is installed, we can create a user + password and the database we will use in our projects.  We define these values inside of `set_db.exp` like so:
