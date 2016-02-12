@@ -72,13 +72,13 @@ software=(
 ```
 software=(
     "python-pip"
-    {% if cookiecutter.db_engine == "postgres" %}
+    {%- if cookiecutter.db_engine == "postgres" -%}
         "expect"
         "python-dev"
         "postgresql"
         "postgresql-contrib"
         "libpq-dev"
-    {% endif %} )
+    {%- endif -%} )
 ```
 
 **1. before**
@@ -96,7 +96,7 @@ expect ${repo_dir}/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_passwor
 **1. after**
 
 ```
-{% if cookiecutter.db_engine == "postgres" %}
+{%- if cookiecutter.db_engine == "postgres" -%}
 #-------------------------------------------------------------
 # SETUP DATABASE
 #-------------------------------------------------------------
@@ -104,7 +104,7 @@ expect ${repo_dir}/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_passwor
 # setup database
 logit "setting up project database"
 expect ${repo_dir}/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${os_user}
-{% endif %}
+{%- endif -%}
 ```
 
 We can now go through and update our `common.py`
@@ -120,16 +120,16 @@ DATABASES = {
 **0. after**
 
 ```
-{% if cookiecutter.db_engine == "postgres" %}
+{%- if cookiecutter.db_engine == "postgres" -%}
 DATABASES = {
     'default': env.db("DATABASE_URL", default="{{cookiecutter.db_engine}}://{{cookiecutter.db_user}}:{{cookiecutter.db_password}}@{{cookiecutter.db_host}}/{{cookiecutter.db_name}}")
 }
 
-{% else %}
+{%- else -%}
 DATABASES = {
     'default': env.db("DATABASE_URL", default="{{cookiecutter.db_engine}}://{{cookiecutter.repo_root_path}}/db.sqlite3")
 }
-{% endif %}
+{%- endif -%}
 ```
 
 And now we make some adjustments to our `requirements/base.text`
@@ -143,9 +143,9 @@ psycopg2
 **0. after**
 
 ```
-{% if cookiecutter.db_engine == "postgres" %}
+{%- if cookiecutter.db_engine == "postgres" -%}
 psycopg2
-{% endif %}
+{%- endif -%}
 ```
 
 Alright, let's spin up this bad boy.  If you want to see what this is doing, you can run up two new projects.  One will use `postgres` and the second will run `sqllite` and then you can really see how this is happening.  
