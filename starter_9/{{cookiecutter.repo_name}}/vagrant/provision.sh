@@ -16,6 +16,7 @@ db_name="{{cookiecutter.db_name}}"
 os_user="{{cookiecutter.os_user}}"
 software=(
     "python-pip"
+
     {% if cookiecutter.db_engine == "postgres" -%}
 
     "expect"
@@ -74,8 +75,8 @@ sed -i '12i source /usr/local/bin/virtualenvwrapper.sh' /home/vagrant/.profile
 logit "Reloading .profile"
 source /home/vagrant/.profile
 
-{% if cookiecutter.db_engine == "postgres" -%}
 
+{% if cookiecutter.db_engine == "postgres" -%}
 #-------------------------------------------------------------
 # SETUP DATABASE
 #-------------------------------------------------------------
@@ -83,8 +84,8 @@ source /home/vagrant/.profile
 # setup database
 logit "setting up project database"
 expect ${repo_dir}/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${os_user}
-{% endif %}
 
+{% endif %}
 #-------------------------------------------------------------
 # SETUP DJANGO
 #-------------------------------------------------------------
