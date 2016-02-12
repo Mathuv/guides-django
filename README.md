@@ -30,6 +30,9 @@ This repo has many subdirectories called `starters`.  Each `starter` is a guide 
 **starter_8**
 > This guide will show users how to build a cookiecutter that supports multiple databases
 
+**starter_9**
+> This guide will show users how to setup documentation and collaboration dot files
+
 ### Who this is for
 
 Anyone who wants to learn about Django web development.  This repo is a refined version of the notes that I took when I started learning Django.  I hope that it can save you some time and questions and provide a quickstart into exploring some of the more advanced offerings of web development.  
