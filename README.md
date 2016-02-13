@@ -49,7 +49,7 @@ This repo is a way for me to give back to the web development community.  For so
 
 ### Note On Branch Structure
 
-Currently there is a `master` branch a `django-starter-1.9.x` branch.  I have labelled the branches to correspond to the version of Django being used.  Thus, when the next version of Django comes out, version 1.10.x it will get it's own branch each of the parts of this directory will be updated accordingly.
+Currently there is a `master` branch a `django-starter-1.9.x` branch.  I have labelled the branches to correspond to the version of Django being used.  Thus, when the next version of Django comes out, version 1.10.x it will get it's own branch and the cookiecutters will be updated to use the latest.  
 
 ### Community Support
 
