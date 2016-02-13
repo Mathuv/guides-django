@@ -20,7 +20,7 @@ We will start by getting you setup with the correct project structure.  I think 
 
 3.  Make the `part_05` template the HEAD
     
-    `git filter-branch --subdirectory-filter part_05 HEAD-- --all`
+    `git filter-branch --subdirectory-filter series_1/part_05 HEAD-- --all`
 
 4.  Cleanup your new git repository
 

@@ -14,7 +14,7 @@ We will pick up where we left off with the `Part 6` cookiecutter.  If you are ju
 
 3.  Make the `part_06` template the HEAD
     
-    `git filter-branch --subdirectory-filter part_06 HEAD-- --all`
+    `git filter-branch --subdirectory-filter series_1/part_06 HEAD-- --all`
 
 4.  Cleanup your new git repository
 
