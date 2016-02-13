@@ -179,6 +179,15 @@ You are going to need to install the following before starting
 
 22. Now you can try to hit your Django site at localhost:8111
 
+### Summary
+
+This guide covered the following topics:
+
+**Development Environment**
+
+* Vagrant setup
+
+
 
 
 

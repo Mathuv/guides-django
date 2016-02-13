@@ -211,4 +211,12 @@ We are going to run through the following steps in this guide:
 
 You will now be able to hit your Django server at [http://localhost:8111](http://localhost:8111).
 
+### Summary
+
+This guide covered the following topics:
+
+**Development Environment**
+
+* Vagrant setup
+* Provisioning
 

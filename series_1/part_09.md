@@ -326,3 +326,17 @@ Now, all we did is change configuration files, so we can be sure that the projec
 4. Turn on the Django dev server
     
     `python manage.py runserver 0.0.0.0:8000`
+
+### Summary
+
+This guide covered the following topics:
+
+**Project Layout**
+
+* Documentation 
+* Collaboration Dot Files
+    - .gitattributes
+    - .pylintrc
+    - humans.txt
+    - .editorconfig
+

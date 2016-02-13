@@ -162,4 +162,12 @@ Alright, let's spin up this bad boy.  If you want to see what this is doing, you
     
     `python manage.py runserver 0.0.0.0:8000` 
 
+### Summary
+
+This guide covered the following topics:
+
+**Tooling**
+
+* Cookiecutter - Choice Questions - Multiple Databases
+
 

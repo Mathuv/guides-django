@@ -72,6 +72,15 @@ At this point, that should be everything. So what did we do?  By going through t
 
 Yes.  In `Part 4` we will introduce `cookiecutter` and show you how to begin truly templating your projects.
 
+### Summary
+
+This guide covered the following topics:
+
+**Tooling Systems**
+
+* Provision Scipt
+    * comment block sections
+    * config variables
 
 
 

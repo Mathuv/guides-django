@@ -188,4 +188,23 @@ Alright.  we should be good to go.  With these changes we can create a new proje
 
 While your inside of your virtualenvironment, you can actually test to see whether or not your virtualenv is using python 3 by running `python -V`,  You should now see a version number.  For me, at the time of this writing and with Ubuntu 14.04 OS, I get the output `3.4.3`.  You will also be able to login to the admin panel with the user and password set for your database.  
 
+### Summary
+
+This guide covered the following topics:
+
+**Django Project Settings**
+
+* Environment Variables
+    - PYTHONPATH
+    - DJANGO_SETTINGS_MODULE
+    - PYTHONDONTWRITEBYTECODE
+
+**Tooling Systems**
+
+* Expect Script
+    - set_admin.exp (createsuperuser automation)
+* Virtualenvironments
+    - Python 2
+    - Python 3
+
 

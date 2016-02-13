@@ -218,3 +218,15 @@ Alright.  That should be everything that we need.  We have now created a `cookie
 __pycache__
 ```
 
+### Summary
+
+This guide covered the following topics:
+
+**Django Project Settings**
+
+* config directory
+
+**project layout**
+
+* Added the django project layout so we don't have to run `startproject`
+

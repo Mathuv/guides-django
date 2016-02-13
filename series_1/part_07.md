@@ -319,4 +319,12 @@ Lets test out what we have by using the cookiecutter as is.
 
 If all went well we should be able to see our "Welcome to your new Django site" that we created in `part_06`.  This is good for now.  In the next guide we are going to explore using cookiecutter to give us a choice between multiple database backends to choose from and be smart enough to install and configure only what we need.   
 
+### Summary
+
+This guide covered the following topics:
+
+**Django Project Settings**
+
+* Database - Postgres
+
 

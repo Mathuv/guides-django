@@ -133,3 +133,13 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
 
 
 With this completed we come to the end of the first part of our django-starts series which show you how to setup a bare minimum Vagrant environment + Django project + cookiecutter.  You can now use the `django_starter` template created in this part as a cookiecutter for al of your Django projects if you like.  However, in reality, this is a little far from what we truly want, which is something that allows us to start developing right away.  So in `Part 5` we are going to begin focusing on Django and seeing how we can improve our Django template.
+
+### Summary
+
+This guide covered the following topics:
+
+**Tooling Systems**
+
+* Cookiecutter
+    * provision script
+    * Vagrantfile
