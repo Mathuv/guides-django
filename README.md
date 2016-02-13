@@ -7,34 +7,34 @@ Django Starters will walk users through the process of creating their own Django
 This repo contains guides which outline the design decisions and steps involved in creating `django-starter`.  What follows is an overview of the `Parts` currently available.  `Parts`'s 1-3 are meant to be introductions to Vagrant, and shell Provisioning.  `Part 4 +` are each cookiecutter templates that can be used to build django projects right away.  The final result is a flexible starting point for your Django projects called `django-starter`.
 
 **Part 1**
-> This guide will show users how to start using vagrant and django
+> Vagrant and Django
 
 **Part 2**
-> This guide will show users how to make a provisioning script for Vagrant
+> Provisioning Vagrant
 
 **Part 3**
-> This guide will show users how to make a smarter provisioning script for vagrant
+> Intermediate Provisioning with Vagrant
 
 **Part 4**
-> This guide will introduce users to a scaffolding tool called cookiecutter
+> Django + Vagrant w/ Cookiecutter
 
 **Part 5**
-> This guide will show users how to use cookiecutter to build a simple django project layout
+> Part 4 + Project Layout w/ Cookiecutter 
 
 **Part 6**
-> This guide will show users envrionment variables and optimized settings 
+> Part 5 + 12 Factor App Envrionment Variables and Django Settings w/ Cookicutter
 
 **Part 7**
-> This guide will show users how to configure Django to use Postgres
+> Part 6 + Postgres Database Setup w/ Cookiecutter
 
 **Part 8**
-> This guide will show users how to build a cookiecutter that supports multiple databases
+> Part 7 + Multiple Database Support w/ Cookiecutter 
 
 **Part 9**
-> This guide will show users how to setup documentation and collaboration dot files
+> Part 8 + Collaboration files and documentation support
 
 **Part 10**
-> This guide will show users how to setup PYTHONPATH, solve pesky problems with .pyc files, automate the creation of a django superuser and setup two virtualenvironments - python 2 and python 3.
+> Part 9 + Advanced Django Settings - PYTHONPATH, .PYC files, Automate `createsuperuser` and `Python 2` and `Python 3` virtualenvironments
 
 ### Who this is for
 
