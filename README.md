@@ -33,6 +33,9 @@ This repo has many subdirectories called `starters`.  Each `starter` is a guide 
 **starter_9**
 > This guide will show users how to setup documentation and collaboration dot files
 
+**starter_10**
+> This guide will show users how to setup PYTHONPATH, solve pesky problems with .pyc files, automate the creation of a django superuser and setup two virtualenvironments - python 2 and python 3.
+
 ### Who this is for
 
 Anyone who wants to learn about Django web development.  This repo is a refined version of the notes that I took when I started learning Django.  I hope that it can save you some time and questions and provide a quickstart into exploring some of the more advanced offerings of web development.  
