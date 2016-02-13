@@ -132,7 +132,7 @@ cd ${repo_name}
 logit "Configuring .bashrc"
 cat << EOF >> /home/vagrant/.bashrc
     # login to virtualenv
-    workon ${repo_dir}3
+    workon ${repo_name}3
     # project directory
     cd ${repo_dir}
     export PYTHONDONTWRITEBYTECODE=1

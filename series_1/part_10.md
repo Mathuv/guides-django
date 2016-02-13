@@ -170,7 +170,7 @@ EOF
 
 Now there is one other thing I want to note and that is that if you activate the virtualenvironment the way we have been from Parts 1-9, you are note taking full advantage of what virtualenvwrapper does with all of its additional hooks and extra scripts.  For example, in the above we set DJANGO_SETTINGS_MODULE and PYTHONPATH, but if you test these with the script we current have and the method of activating it we are using, they are not set.  Why?  By calling `path/to/virtualenvwrapper/activate` we are essentially activating `virtualenv` in the way that you would when you do not have virtualenvwrapper, which means the `postactivate` script does not run.  Thus, those settings do not get set when we login to the server.  We can fix this by swapping line `132` in our `provision.sh` with the following:
 
-`workon ${repo_dir}3`
+`workon ${repo_name}3`
 
 Alright.  we should be good to go.  With these changes we can create a new project based on this cookiecutter and then we can run through our start project command.  
 
