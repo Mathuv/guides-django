@@ -1,10 +1,10 @@
-# Starter 7
+# Part 7
 
 Django, like many other modern frameworks, provides you with a variety of Databases to choose from.  Best practices suggests using Postgres, however, you are free to choose something that works for you.  This section of the series is going to review how to setup Django to use postgres and configure it in a 12 Factor App compliant way.  
 
 ### HOUSEKEEPING
 
-We will pick up where we left off with the `starter_6` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
+We will pick up where we left off with the `Part 6` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
 
 1.  Clone `django-starter` into a new repo on your local
 
@@ -12,9 +12,9 @@ We will pick up where we left off with the `starter_6` cookiecutter.  If you are
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_6` template the HEAD
+3.  Make the `part_06` template the HEAD
     
-    `git filter-branch --subdirectory-filter starter_6 HEAD-- --all`
+    `git filter-branch --subdirectory-filter part_06 HEAD-- --all`
 
 4.  Cleanup your new git repository
 
@@ -96,9 +96,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': ' django.db.backends.postgresql',
-        'NAME': 'starter_7',
-        'USER': 'starter_7',
-        'PASSWORD': 'starter_7',
+        'NAME': 'part_07',
+        'USER': 'part_07',
+        'PASSWORD': 'part_07',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -317,6 +317,6 @@ Lets test out what we have by using the cookiecutter as is.
     
     `python manage.py runserver 0.0.0.0:8000`
 
-If all went well we should be able to see our "Welcome to your new Django site" that we created in `starter_6`.  This is good for now.  In the next guide we are going to explore using cookiecutter to give us a choice between multiple database backends to choose from and be smart enough to install and configure only what we need.   
+If all went well we should be able to see our "Welcome to your new Django site" that we created in `part_06`.  This is good for now.  In the next guide we are going to explore using cookiecutter to give us a choice between multiple database backends to choose from and be smart enough to install and configure only what we need.   
 
 

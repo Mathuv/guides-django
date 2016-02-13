@@ -1,4 +1,4 @@
-# Starter 10
+# Part 10
 
 In this post, we are going to write one last component for our cookiecutter.  There is still one commnad that needs to be run when we begin our project and that is `createsuperuser` which is where we specify the username and the password that we will use when creating ourproject.  There is also the fact that we have setup this project to use Python 2.  Let's change this so we can make use of Python3.  These are just a few manual steps, but it is one more step toward a more pleasent development experience.  
 
@@ -11,7 +11,7 @@ We are going to fix some loose ends.
 
 ### HOUSEKEEPING
 
-We will pick up where we left off with the `starter_9` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
+We will pick up where we left off with the `Part 9` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
 
 1.  Clone `django-starter` into a new repo on your local
 
@@ -19,9 +19,9 @@ We will pick up where we left off with the `starter_9` cookiecutter.  If you are
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_9` template the HEAD
+3.  Make the `part_09` template the HEAD
     
-    `git filter-branch --subdirectory-filter starter_9 HEAD-- --all`
+    `git filter-branch --subdirectory-filter part_09 HEAD-- --all`
 
 4.  Cleanup your new git repository
 
@@ -168,7 +168,7 @@ EOF
 
 > **DISCUSSION:** ADD NOTES ON WHY THE ABOVE IS HAPPENING AND WHAT IT BRINGS TO THE PROJECT
 
-Now there is one other thing I want to note and that is that if you activate the virtualenvironment the way we have been from starter 1-9, you are note taking full advantage of what virtualenvwrapper does with all of its additional hooks and extra scripts.  For example, in the above we set DJANGO_SETTINGS_MODULE and PYTHONPATH, but if you test these with the script we current have and the method of activating it we are using, they are not set.  Why?  By calling `path/to/virtualenvwrapper/activate` we are essentially activating `virtualenv` in the way that you would when you do not have virtualenvwrapper, which means the `postactivate` script does not run.  Thus, those settings do not get set when we login to the server.  We can fix this by swapping line `132` in our `provision.sh` with the following:
+Now there is one other thing I want to note and that is that if you activate the virtualenvironment the way we have been from Parts 1-9, you are note taking full advantage of what virtualenvwrapper does with all of its additional hooks and extra scripts.  For example, in the above we set DJANGO_SETTINGS_MODULE and PYTHONPATH, but if you test these with the script we current have and the method of activating it we are using, they are not set.  Why?  By calling `path/to/virtualenvwrapper/activate` we are essentially activating `virtualenv` in the way that you would when you do not have virtualenvwrapper, which means the `postactivate` script does not run.  Thus, those settings do not get set when we login to the server.  We can fix this by swapping line `132` in our `provision.sh` with the following:
 
 `workon ${repo_dir}3`
 

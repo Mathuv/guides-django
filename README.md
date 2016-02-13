@@ -2,38 +2,38 @@
 
 Django Starters will walk users through the process of creating their own Django Templates that can be used to easily start new Django web development projects.  Specifically, we will focus on the minimum requirements for setting up a development environment, advanced project layouts, settings and tooling systems. 
 
-## Starters
+## Django-Starters
 
-This repo has many subdirectories called `starters`.  Each `starter` is a guide that is going to walk through one concept or technique.  What follows is an overview of the `starters` currently available.  `starter`'s 1-3 can be seen as one offs.  `starter 4 +` are actualy cookiecutter templates that can be used to build django projects right away.  Here is an overview of the templates currently available.
+This repo contains guide which outline the design decisions and steps involved in creating `django-starter`.  What follows is an overview of the `Parts` currently available.  `Parts`'s 1-3 are meant to be introductions to Vagrant, and shell Provisioning.  `Part 4 +` are each cookiecutter templates that can be used to build django projects right away.  The final result is a flexible starting point for your Django projects called `django-starter`.
 
-**starter_1**
+**Part 1**
 > This guide will show users how to start using vagrant and django
 
-**starter_2**
+**Part 2**
 > This guide will show users how to make a provisioning script for Vagrant
 
-**starter_3**
+**Part 3**
 > This guide will show users how to make a smarter provisioning script for vagrant
 
-**starter_4**
+**Part 4**
 > This guide will introduce users to a scaffolding tool called cookiecutter
 
-**starter_5**
+**Part 5**
 > This guide will show users how to use cookiecutter to build a simple django project layout
 
-**starter_6**
+**Part 6**
 > This guide will show users envrionment variables and optimized settings 
 
-**starter_7**
+**Part 7**
 > This guide will show users how to configure Django to use Postgres
 
-**starter_8**
+**Part 8**
 > This guide will show users how to build a cookiecutter that supports multiple databases
 
-**starter_9**
+**Part 9**
 > This guide will show users how to setup documentation and collaboration dot files
 
-**starter_10**
+**Part 10**
 > This guide will show users how to setup PYTHONPATH, solve pesky problems with .pyc files, automate the creation of a django superuser and setup two virtualenvironments - python 2 and python 3.
 
 ### Who this is for

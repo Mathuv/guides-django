@@ -1,6 +1,6 @@
-# Django Starter 9
+# Part 9
 
-This section is going to focus on building your project to support collaberation.  All great software is built with other people.  Thus, the best thing we can do, whether we plan on building projects by ourselves or with teams, is set up for both scenarios.  We are going to do the following in this starter:
+This section is going to focus on building your project to support collaberation.  All great software is built with other people.  Thus, the best thing we can do, whether we plan on building projects by ourselves or with teams, is set up for both scenarios.  We are going to do the following in this part:
 
 * Build documentation structure
 * Add editor and git config files
@@ -9,7 +9,7 @@ This section is going to focus on building your project to support collaberation
 
 ### HOUSEKEEPING
 
-We will pick up where we left off with the `starter_8` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
+We will pick up where we left off with the `part 8` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
 
 1.  Clone `django-starter` into a new repo on your local
 
@@ -17,9 +17,9 @@ We will pick up where we left off with the `starter_8` cookiecutter.  If you are
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_8` template the HEAD
+3.  Make the `part_08` template the HEAD
     
-    `git filter-branch --subdirectory-filter starter_8 HEAD-- --all`
+    `git filter-branch --subdirectory-filter part_08 HEAD-- --all`
 
 4.  Cleanup your new git repository
 
@@ -48,7 +48,7 @@ Lets start by adding a license to this template.  No matter what you do, you sho
 
 > **DISCUSSION:**  All the above are taken from [tl;dr legal](https://tldrlegal.com/).  Great resources, I recommend checking it out.
 
-Knowing the above, we are going to setup our cookiecutter to ask us to choose between one of the four above licenses.  This is done is the same way as we did with our database choice question in `starter_8`.  Let's start by adding a new question to our `cookiecutter.json`
+Knowing the above, we are going to setup our cookiecutter to ask us to choose between one of the four above licenses.  This is done is the same way as we did with our database choice question in `part 8`.  Let's start by adding a new question to our `cookiecutter.json`
 
 **cookiecutter.json**
 

@@ -1,12 +1,12 @@
-# Starter 2
+# Part 2
 
-In `starter_1` we intialized a vagrant machine, installed and configued virtualenvwrapper in our VM and then setup our Django project.  If we wanted to start a new project we would have to go through all of those steps again.  That is a very manual process.  Instead, this starter is going to show you how to setup a provisioning script, which will be run by vagrant.  
+In `Part 1` we intialized a vagrant machine, installed and configued virtualenvwrapper in our VM and then setup our Django project.  If we wanted to start a new project we would have to go through all of those steps again.  That is a very manual process.  Instead, this starter is going to show you how to setup a provisioning script, which will be run by vagrant.  
 
-By setting up a provisioning script we ensure that we do not have to repeat steps 12-22 from `starter_1`.  In addition, we remove several points of failure.  In other words, if done correctly automating allows us to avoid the opportunity to make mistakes.
+By setting up a provisioning script we ensure that we do not have to repeat steps 12-22 from `Part 1`.  In addition, we remove several points of failure.  In other words, if done correctly automating allows us to avoid the opportunity to make mistakes.
 
 ### Housekeeping
 
-This guide is going to introduce shell scripting.  Shell scripting is an amazing tool to have in your tool box.  I definetley recommend reading up on it before starting this section.  I have provided a great little resource below.
+This guide is going to introduce shell scripting.  Shell scripting is an amazing tool to have in your tool box.  I definetley recommend reading up on it before starting this section.  I have provided a great little resource below.  
 
 [Guide to Shell Scripting](http://linuxcommand.org/writing_shell_scripts.php)
 
@@ -20,35 +20,9 @@ We will run through the following steps in this guide:
 * Create your provisioning scripts
 * Tell Vagrant to run your provisioning scripts
 
-
-### Instruction for Immediate Use
-
-In order to use this right away, you will need to do a few things.
-
-1.  Create an empty folder where you project is going to live on your local
-    
-    `mkdir <project_folder>`
-
-2.  `cd` into the folder you just created
-
-    `cd <project_folder>`
-
-3.  Clone this repository
-
-4.  Make the `starter_2` template the HEAD
-    
-    `git filter-branch --prune-empty --subdirectory-filter starter_2/django-starter HEAD`
-
-Your directory structure should now look like the following.  Now you can go through and cofigure it to work for your project.  Is this the best way to do this, no.  That is why I wrote more starters.  But in the event you want to do it this way, who am I to stop you?
-
-        .
-        ├── Vagrantfile
-        └── taye_diggs
-            ├── db.sqlite3
-            ├── manage.py
-            └── taye_diggs
-
 ### Step-By-Step
+
+If you started with `Part 1`, you can continue where you ended off with those.  If not, please create a directory called `django-starter` and add those files into this newly created directory.  Once completed, continue on with this guide.
 
 We are going to run through the following steps in this guide:
 

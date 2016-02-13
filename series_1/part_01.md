@@ -1,8 +1,8 @@
-# Starter 1
+# Part 1
 
 A Virtual Machine (VM) is software that allows you to run oher operating systems on your coputer in a separate window.  For example, your main machine is OSX, but you need to use Linux.  You can create a Virtual Machine and install Linux on it.  
 
-Developers like to use VM's because they allow us to simulate production environments, save time when on boarding new developers and ensure consistency between environments. While VM's are super useful, they can be tricky to setup.  This is where Vagrant comes in.  Vagrant allows us to easily configure and manage our VM's.  `Starter_1` is going to show you how to setup a VM using Vagrant.
+Developers like to use VM's because they allow us to simulate production environments, save time when on boarding new developers and ensure consistency between environments. While VM's are super useful, they can be tricky to setup.  This is where Vagrant comes in.  Vagrant allows us to easily configure and manage our VM's.  Part 1 is going to show you how to setup a VM using Vagrant.
 
 ### Housekeeping
 
@@ -12,32 +12,6 @@ You are going to need to install the following before starting
 *  <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>
 
 > Discussion:  Why vagrant?  I build all my projects with Vagrant.  Using this setup, I am able to achieve a higher level of parity with my production environments and I can easily get technical and non-technical people alike ramped up on my projects quickly and easily.
-
-### Instruction for Immediate Use
-
-In order to use this right away, you will need to do a few things.
-
-1.  Create an empty folder where you project is going to live on your local
-    
-    `mkdir <project_folder>`
-
-2.  `cd` into the folder you just created
-
-    `cd <project_folder>`
-
-3.  Initialize git
-    
-    `git filter-branch --prune-empty --subdirectory-filter starter_1/django-starter HEAD`
-
-Your directory structure should now look like the following.  Now you can go through and cofigure it to work for your project.  Is this the best way to do this, no.  That is why I wrote more starters.  But in the event you want to do it this way, who am I to stop you?
-
-        .
-        ├── Vagrantfile
-        └── taye_diggs
-            ├── db.sqlite3
-            ├── manage.py
-            └── taye_diggs
-
 
 ### Step-By-Step
 

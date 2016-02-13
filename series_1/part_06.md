@@ -1,6 +1,6 @@
-# Starter 6
+# Part 6
 
-This is where we are going to start customizing our Django project layout.  We started this process in `starter_5` when we changed the name of the `src` directory to `config`.  Otherwise, all we did was use the layout generated with the `startproject` command and turn it into a cookiecutter. While we could still use `starter_5` as a starting point, the project layout still leaves us wanting. The problems will come when you begin developing more complex Django applications.  What will happen is that as the project scales that layout is going to quickly become unmaintainable.
+This is where we are going to start customizing our Django project layout.  We started this process in `Part 5` when we changed the name of the `src` directory to `config`.  Otherwise, all we did was use the layout generated with the `startproject` command and turn it into a cookiecutter. While we could still use `Part 5` as a starting point, the project layout still leaves us wanting. The problems will come when you begin developing more complex Django applications.  What will happen is that as the project scales that layout is going to quickly become unmaintainable.
 
 This guide will present a good way to go about customizing the project layout.  Specifically, we are going to focus on the settings file and do two things: 
 
@@ -10,7 +10,7 @@ This guide will present a good way to go about customizing the project layout.  
 
 ### HOUSEKEEPING
 
-We will start by getting you setup with the correct project structure.  I think the best thing to do is get the `starter_5` cookiecutter.  If you are just starting this series, here is a quick way to get it.  
+We will start by getting you setup with the correct project structure.  I think the best thing to do is get the `Part 5` cookiecutter.  If you are just starting this series, here is a quick way to get the source code from `Part 04` which is where we left off previously.  
 
 1.  Clone `django-starter` into a new repo on your local
 
@@ -18,9 +18,9 @@ We will start by getting you setup with the correct project structure.  I think 
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_5` template the HEAD
+3.  Make the `part_05` template the HEAD
     
-    `git filter-branch --subdirectory-filter starter_5 HEAD-- --all`
+    `git filter-branch --subdirectory-filter part_05 HEAD-- --all`
 
 4.  Cleanup your new git repository
 
@@ -68,7 +68,7 @@ Now we can begin mofifying our settings file.  When you spin up a new Django pro
 
 The most common types of development environments are `dev` and `production`.  In more complex environemts, you can have even more environments like `staging`, `qa`, `testing` etc.  The point?  `production` is going to have different variables compared to `dev`.  Further, it might have differnt settings entirely depending on the tools required for production, but not required in development.  Fortunatley for us, the solution is not too complicated - `environment variables` and `multiple settings` files.
 
-This idea is inspired by the principles outlined in [12 factor app](http://12factor.net/config).  The idea is that we set `environment variables`, which are set and stored in one location, and we tell our settings files where to find those variables.  This is step one and resolves the issue of having to go in our settings file and change it multiple times.  It also means that we can version control our settings files and never have to configure it unless we are adding something to it.  Does this remind you of something?  Yep, this is exactly what we did in our `provision.sh` in `starter_3` where we defined a section at the top of the file to hold our `configs`.  It's also the same thing that `cookiecutter` does when you set a `cookiecutter.json` and the rest of the files don't need to be changed.  Same difference.
+This idea is inspired by the principles outlined in [12 factor app](http://12factor.net/config).  The idea is that we set `environment variables`, which are set and stored in one location, and we tell our settings files where to find those variables.  This is step one and resolves the issue of having to go in our settings file and change it multiple times.  It also means that we can version control our settings files and never have to configure it unless we are adding something to it.  Does this remind you of something?  Yep, this is exactly what we did in our `provision.sh` in `Part 3` where we defined a section at the top of the file to hold our `configs`.  It's also the same thing that `cookiecutter` does when you set a `cookiecutter.json` and the rest of the files don't need to be changed.  Same difference.
 
 While the environment variables solve the issue of having to change values in our settings files, we still need to have a solution when our settings file needs a completley different tool configuration in `prod` v. `dev`, or visa-versa.  One of the accepted answers here is `multiple configuration` files.  Thus, we create a `common`, `dev` and `prod` settings files.  This allows other developers to easily know what settings are used in each environment and where to find them. 
 
@@ -657,7 +657,7 @@ Now, there is one more thing we need to do with our new settings files.  We have
 Alright, that is pretty much everything required to make your settings files smarter.  By the end your project should look like this:
 
 ```
-├── starter_6
+├── part_06
 │   ├── README.md
 │   ├── cookiecutter.json
 │   └── {{cookiecutter.repo_name}}

@@ -1,8 +1,8 @@
-# Starter 5
+# Part 5
 
-Just like we created the cookiecutter for `starter_4`, we are going to create a cookiecutter for the project layout.  Now, we can keep generating the project layout using the `startproject` command, but we want to develop our own project structure and use `cookiecutter` to generate it.  To start, we are going to turn the project layout created by `startproject` into a cookiecutter.
+Just like we created the cookiecutter for `Part 4`, we are going to create a cookiecutter for the project layout.  Now, we can keep generating the project layout using the `startproject` command, but we want to develop our own project structure and use `cookiecutter` to generate it.  To start, we are going to turn the project layout created by `startproject` into a cookiecutter.
 
-This is what our `starter_4` cookiecutter produced.
+This is what our `Part 4` cookiecutter produced.
 
 ```
 django_starter           (repo name)
@@ -24,11 +24,10 @@ There are now two things we need to do:
 1.  Make `src` directory a cookiecutter template
 2.  Remove the `django startproject <projectname>` line from our provision script
 
-Lets start by copying our `starter_4` cookiecutter and put it into a new directory.  In this case, I am going to call the new cookiecutter repo name `starter_5` and add everything that was in `starter_4` to it.  You should have a directory structure that looks like this:
+Lets start with where we left off with our `Part 4` cookiecutter. You should have a directory structure that looks like this:
 
 ```
-starter_5
-│   ├── README.md
+Part_04
 │   ├── cookiecutter.json
 │   └── {{cookiecutter.repo_name}}
 │       ├── Vagrantfile
@@ -36,27 +35,24 @@ starter_5
 │           └── provision.sh
 ```
 
-Lets now add the project that we generated from `starter_4` (the first directory structure in this guide.)  
+We are now going to add the basic project laout that Django gives you when you run startproject
 
 ```
-starter_5
-│   ├── README.md
+Part_05
 │   ├── cookiecutter.json
 │   └── {{cookiecutter.repo_name}}
 │       ├── Vagrantfile
-│       ├── src
-│       │   ├── db.sqlite3
-│       │   ├── manage.py
-│       │   └── src
-│       │       ├── __init__.py
-│       │       ├── settings.py
-│       │       ├── urls.py
-│       │       └── wsgi.py
+│       ├── manage.py
+│       └── src
+│       │    ├── __init__.py
+│       │    ├── settings.py
+│       │    ├── urls.py
+│       │    └── wsgi.py
 │       └── vagrant
 │           └── provision.sh
 ```
 
-As you can see, the difference is the `src` directory.  Now, we have a cookiecutter template that has a Django template from the start.  This being the case, we no longer have to use Vagrant to create our project layout, so let's go `vagrant/provision.sh` and remove lines 75-77.  They are the ones that look like this:
+As you can see, the difference is the `src` directory and `manage.py`.  Now, we have a cookiecutter template that has a Django template from the start.  This being the case, we no longer have to use Vagrant to create our project layout, so let's go `vagrant/provision.sh` and remove lines 75-77.  They are the ones that look like this:
 
         # INFO: initialize virtualenvironment
         logit "Create django project layout for ${project_name}"
@@ -67,7 +63,6 @@ We could actually use this sructure and still call this a cookiecutter.  The iss
 To begin this process, lets start with the directories labelled `src`.  There are actually two of them.  Now, for me, no matter the project, the `src` subdiretory of `src` has always been confusing.  Even that sentence is confusing.  It doesn't tell me that much about what is inside of this directory.  That being the case, we are going to change it to `config`.
 
 ```
-├── src
 │     ├── db.sqlite3
 │     ├── manage.py
 │     └── config          (changed from src)
@@ -80,7 +75,7 @@ To begin this process, lets start with the directories labelled `src`.  There ar
 However we still have a problem.  When we run `startproject` it give us a repo and a project within that.  In our cookiecutter, we already have the repo and we are defining our own project.  This means that the `config` directory and the `manage.py` file should be a directory level higher.  Lets move then so they look like this:
 
 ```
-├── starter_5
+Part_05
 │   ├── README.md
 │   ├── cookiecutter.json
 │   └── {{cookiecutter.repo_name}}
@@ -112,7 +107,6 @@ cd ${project_name}
 logit "Changing to ${project_name} directory"
 cd /home/vagrant/${repo_name}
 
-``` 
 
 Now that is complete, here are the things you will need to change to successfully refactor this project layout into a cookiecutter:
 
@@ -187,20 +181,19 @@ Now that is complete, here are the things you will need to change to successfull
 
 6.  Lastly, lets make the `src` directory customizable by renaming it to `{{cookiecutter.project_name}}`.  In the end, our cookiecutter directory will look like this:
 
-        ├── starter_5
-        │   ├── README.md
+        ├── part_05
         │   ├── cookiecutter.json
         │   └── {{cookiecutter.repo_name}}
         │       ├── Vagrantfile
         │       ├── vagrant
         │       │   └── provision.sh
         │       └── {{cookiecutter.project_name}}
-        │           ├── config
-        │           │   ├── __init__.py
-        │           │   ├── settings.py
-        │           │   ├── urls.py
-        │           │   └── wsgi.py
-        │           └── manage.py
+        │       ├── config
+        │            ├── __init__.py
+        │            │   ├── settings.py
+        │            │   ├── urls.py
+        │            │   └── wsgi.py
+        │       └── manage.py
 
 Alright.  That should be everything that we need.  We have now created a `cookiecutter` that will provision an environment using vagrant and build a project layout at the same time.  Test it out using the `cookiecutter` CLI tool.
 
@@ -214,7 +207,7 @@ Alright.  That should be everything that we need.  We have now created a `cookie
 
 3.  Check out the site at localhost:8111
 
-**GOTCHA:**  If you copied over your project from `starter_4` you may run into some errors when you run `cookiecutter`.  This is because the template you may have taken from `starter_4` has `.pyc` files.  These files trip up cookiecutter.  All you have to do is delete those file, which are all located in the `config` directory.  I want to note now that `.pyc` files are note a bad thing, they actually help speed up the execution of your Django app when you `turn it on` so to speak.  Having said this, it is totally fine to delete them.  Some developers will even tell Python to not create `.pyc` file while they are developing.  More on this later.    
+**GOTCHA:**  If you copied over your project from `part 4` or started again at that point, you may run into some errors when you run `cookiecutter`.  This is because the template you may have taken from `part 4` has `.pyc` files.  These files trip up cookiecutter.  All you have to do is delete those file, which are all located in the `config` directory.  I want to note now that `.pyc` files are note a bad thing, they actually help speed up the execution of your Django app when you `turn it on` so to speak.  Having said this, it is totally fine to delete them.  Some developers will even tell Python to not create `.pyc` file while they are developing.  More on this later.    
 
 **GOTCHA 2:** In the vein of the above `GOTCHA` note, I recommend adding the following lines to your gitignore.  It is important to not commit the `.pyc` files to Git.  Your computer will not blow up, but it can create some very interesting errors as you build and collaborate on Python projects.  
 

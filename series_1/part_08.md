@@ -1,12 +1,12 @@
-# Django 8
+# Part 8
 
-In `starter 7` we learned how to configure Postgres in Django.  Before `starter_7` we were using the minimal `sqllite3` database.  Now, this can be a good little database to use for something like a POC where you don't need the horsepower of Postgres.  Thus, instead of just saying don't use it, I want to show you how you can choose everytime you start your project.
+In `Part 7` we learned how to configure Postgres in Django.  Before `Part 7` we were using the minimal `sqllite3` database.  Now, this can be a good little database to use for something like a POC where you don't need the horsepower of Postgres.  Thus, instead of just saying don't use it, I want to show you how you can choose everytime you start your project.
 
-This starter is going to show how to get `cookiecutter` to ask you multiple choice questions.  Specifically, we will have it ask us which database we want to use and, based on our answer, only install what we require for that database to work.  
+This part is going to show how to get `cookiecutter` to ask you multiple choice questions.  Specifically, we will have it ask us which database we want to use and, based on our answer, only install what we require for that database to work.  
 
 ### HOUSEKEEPING
 
-We will pick up where we left off with the `starter_7` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
+We will pick up where we left off with the `part_07` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
 
 1.  Clone `django-starter` into a new repo on your local
 
@@ -14,9 +14,9 @@ We will pick up where we left off with the `starter_7` cookiecutter.  If you are
 
 2.  `cd` into `<new-directory>`
 
-3.  Make the `starter_7` template the HEAD
+3.  Make the `part_07` template the HEAD
     
-    `git filter-branch --subdirectory-filter starter_7 HEAD-- --all`
+    `git filter-branch --subdirectory-filter part_07 HEAD-- --all`
 
 4.  Cleanup your new git repository
 

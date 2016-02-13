@@ -1,10 +1,10 @@
-# Starter 4
+# Part 4
 
-We left off `starter_3` with a starter project template that could be configured in a more manageable way.  This starter will introduce cookiecutter into the equation and show you how you can create robust and complex templates that will be configured through one interactive terminal session.  
+We left off `Part 3` with a starter project template that could be configured in a more manageable way.  This starter will introduce cookiecutter into the equation and show you how you can create robust and complex templates that will be configured through one interactive terminal session.  
 
 # HOUSEKEEPING
 
-Cookiecutter is a commandline tool that creates completley configured projects from cookiecutters.  Now, before you can use this tool you have to do a little setup.  Because we are familiar with our current starter setup, we will make the `starter_3` project a cookiecutter.  
+Cookiecutter is a commandline tool that creates completley configured projects from cookiecutters.  Now, before you can use this tool you have to do a little setup.  Because we are familiar with our current starter setup, we will make the `Part 3` project a cookiecutter.  
 
 The first thing we need to do is install cookiecutter.
 
@@ -22,13 +22,13 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
 
 # Step-by-step
 
-1.  Create your project folder, as always, mine is called `starter_4`
+1.  Create your project folder, as always, mine is called `django_starter`
 
-    mkdir `starter_4`
+    mkdir `django_starter`
 
-2.  Change directory so you are inside of `starter_4`
+2.  Change directory so you are inside of `django_starter`
 
-    `cd starter_4` 
+    `cd django_starter` 
 
 3.  Create a cookiecutter configuration file
 
@@ -46,7 +46,7 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
 
     > Questions are key, value pairs.  The keys are the question that you are telling cookiecutter to ask.  The value is the default value.  The defualt value is only used when you leave the question blank.  More on this later.
 
-    > Notice anything about the above questions?  At the end of `starter_3` I told you that if you would like to create a new project using `starter_3` as your template, you would have to change two files:
+    > Notice anything about the above questions?  At the end of `Part 3` I told you that if you would like to create a new project using `Part 3` as your template, you would have to change two files:
     1.  **provision.sh** - you have to specify the following variables `repo_name`, `proejct_name`, `virtualenv_dir`.
     2.  **Vagrantfile** - you have to change the `django_starter` part of `config.vm.synced_folder ".", "/home/vagrant/django_starter"` to the repo name your new project requires.  
 
@@ -106,9 +106,9 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
 
 10.  Cool, that should be everything.  Okay.  Lets see if this worked.  Go into your terminal and run the following command:
 
-        `cookiecutter starter_4`
+        `cookiecutter django_starter`
 
-    > This will tell cookiecutter to generate a project based on `starter_4`, which is now a cookiecutter!  When you run the command, it is going to ask you all the questions you specified and use them to generate your template. 
+    > This will tell cookiecutter to generate a project based on `django_starter`, which is now a cookiecutter!  When you run the command, it is going to ask you all the questions you specified and use them to generate your template. 
     
     ![Expected outcome](../resources/images/starter_4_cookiecutter_questions.png)
 
@@ -132,4 +132,4 @@ You first create a cookiecutter.  Each one of the starters in this project is ca
     `vagrant up`
 
 
-With this completed we come to the end of the first part of our django-starts series which show you how to setup a bare minimum Vagrant environment + Django project + cookiecutter.  You can now use starter_4 as a cookiecutter for al of your Django projects if you like.  However, in reality, this is a little far from what we truly want, which is something that allows us to start developing right away.  So in `starter_5` we are going to begin focusing on Django and seeing how we can improve our Django template.
+With this completed we come to the end of the first part of our django-starts series which show you how to setup a bare minimum Vagrant environment + Django project + cookiecutter.  You can now use the `django_starter` template created in this part as a cookiecutter for al of your Django projects if you like.  However, in reality, this is a little far from what we truly want, which is something that allows us to start developing right away.  So in `Part 5` we are going to begin focusing on Django and seeing how we can improve our Django template.
