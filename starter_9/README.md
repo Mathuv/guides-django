@@ -9,7 +9,7 @@ This section is going to focus on building your project to support collaberation
 
 ### HOUSEKEEPING
 
-We will pick up where we left off with the `starter_6` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
+We will pick up where we left off with the `starter_8` cookiecutter.  If you are just starting this series, here is a quick way to get a hold of it. 
 
 1.  Clone `django-starter` into a new repo on your local
 
