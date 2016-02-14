@@ -36,6 +36,9 @@ This repo contains guides which outline the design decisions and steps involved 
 **Part 10**
 > Part 9 + Advanced Django Settings - PYTHONPATH, .PYC files, Automate `createsuperuser` and `Python 2` and `Python 3` virtualenvironments
 
+**Part 11**
+> Part 10 + test framework (nose) and coverage report (coverage.py)
+
 ### Who this is for
 
 Anyone who wants to learn about Django web development.  This repo is a refined version of the notes that I took when I started learning Django.  I hope that it can save you some time and questions and provide a quickstart into exploring some of the more advanced offerings of web development.  
