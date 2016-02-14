@@ -101,6 +101,14 @@ Currently our project does not have a place for tests.  Thus, we have to create 
     >    - with-coverage: run coverage.py
     >    - cover-package: specifically tell coverage.py which packages to provide output for.  Ideally, all your django applications you built and are testing should be specified here.  This is commented because when you use this cookiecutter there are no apps to start with.  When create new apps, make sure to add here.
 
+### Summary
+
+This guide covered the following topics:
+
+**Tooling Systems**
+
+* Django Nose
+
 
 
 
