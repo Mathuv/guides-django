@@ -94,7 +94,7 @@ Community Support
 I am a believer in the community creating things together. If you are reading through anything I have written here and find that it is incorrect, outdated or lacking in proper documentation, please feel free to create an issue or fork this repo and make a PR.
 
 .. _django starter: https://github.com/tkjone/django-starter
-.. _django wagtail starter: https://github.com/tkjone/django-starter
+.. _django wagtail starter: https://github.com/tkjone/django-wagtail-starter
 .. _Part 1: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_01.md
 .. _Part 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_02.md
 .. _Part 3: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_03.md
