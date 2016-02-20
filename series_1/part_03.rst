@@ -73,7 +73,7 @@ The only configuration we need to do with Django, to make it work with postgres,
 
     DATABASES = {
         'default': {
-            'ENGINE': ' django.db.backends.postgresql',
+            'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'myproject',
             'USER': 'dev',
             'PASSWORD': 'dev',

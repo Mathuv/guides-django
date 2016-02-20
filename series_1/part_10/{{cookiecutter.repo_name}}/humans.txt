@@ -1,3 +1,0 @@
-{{cookiecutter.author_name}}
-
-<!-- <name> -->

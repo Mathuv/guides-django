@@ -1,8 +1,0 @@
-# Dependencies for the dev environment
--r base.txt
-
-# test tools
-django-extensions>=1.6.1
-
-# debug tools
-django-debug-toolbar>=1.4

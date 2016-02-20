@@ -1,178 +1,63 @@
-******
-Part 6
-******
-
-Python has a philisophy called the  `Zen of Python`_.  One of my favorite points in Python's Zen is this:
+*******
+Part 06
+*******
 
 .. epigraph::
 
-   There Should be one - and perferably only one - obvious way to do it.
+   Knowledge is power
 
-When you work with Django, you begin to see that much of the framework follows this ideology.  One of the exceptions to this rule: the ``settings.py`` file. It definetley feels like this critical file got left behind.  To be fair though, the above quote says nothing about the *obious way* being the *right way*
+This is something you have likely heard.  To me, Logs are power.  When done correctly, they are an effective debugging tool and yet I have been on many projects where they are not used.  I think one of the biggest barriers to using logs is that they are a little confusing to setup, they are also confusing to use and shit, they can be difficult to read.  Here is a rundown of:
 
-Lets look at what you get when you run Django CLI utility command ``startproject``:
-
-.. code-block:: bash
-
-    └── myproject
-        ├── config
-        │   ├── __init__.py
-        │   ├── settings.py
-        │   ├── urls.py
-        │   └── wsgi.py
-        ├── manage.py
+* Where do Logs Live?
+* How to Configure Logs
 
 
-For a lot of reasons, this ``settings.py`` is going to cause you a lot of grieve in the future.  Fortunatley the Django community has developed an alternative approach [1]_ to structuring the settings file.
+Where do Logs Live?
+-------------------
 
-My goal in this post is not to explain why this pattern is better.  The Django community has already done an amazing job explaining this [2]_.  Rather, I want to outline how I organize my settings files and align myself to *The One True Way*.
+When deciding where logs live, we have to understand that there are going to be logs for our server, our application - both front end and back end and a host of other packages.  This being the case, we do not want to have to go find our logs.  We want them in one location.  For this reason, I like to create a ``logs`` directory in the ``myproject`` root directory.
 
-We will start by first explaining the process of splitting our django settings files and then review environment variables.
+The thing about the logs files is we do not want to store these in Git.  Theses files can become big, and for development, we do not need to store these.  However, if we just leave this folder empty, Git will not track it.  We need to add a ``.gitignore`` file to ``logs`` to make sure git tracks it.
 
-Multiple Settings Files
-=======================
-
-Lets begin by creating a new directory called ``settings`` inside of the ``config`` directory.  Inisde of ``settings``, you will also add an ``__init__.py`` file.  You now have something that looks like this:
+We can add the following lines to this gitignore:
 
 .. code-block:: bash
 
-    └── settings/
-            └──__init__.py
+    # don't commit files in this dir
+    *
 
-What we have done is created a new python package called ``settings`` [3]_.  At this point we can start creating our settings files.  I always start with a minimum of three settings file:
+    # keep .gitignore files
+    !.gitignore
 
-+----------------+----------------------------------------------------+
-| Settings Files | Description                                        |
-+================+====================================================+
-| ``common.py``  | This is where all the common Django settings go.   |
-+----------------+----------------------------------------------------+
-| ``dev.py``     | All of your development specific settings go here. |
-+----------------+----------------------------------------------------+
-| ``prod.py``    | Yep, production specific settings here.            |
-+----------------+----------------------------------------------------+
-
-Based, on this I go inside of my ``settings`` folder and add those three files.  At this point you have successfully split your settings files.  You went from this:
+What goes inside of logs will change per project, but I like to divide it into subdirectories that look like this:
 
 .. code-block:: bash
 
-    └── myproject
-        ├── config
-        │   ├── __init__.py
-        │   ├── settings.py
-        │   ├── urls.py
-        │   └── wsgi.py
-        ├── manage.pys
+     ── logs
+        ├── client
+        ├── nginx
+        └── server
+
+Each one of the above folders has a ``.gitignore`` like we did for ``logs``.  You do not need all of these subdirectories, especially the ``nginx`` one if you are not using ``nginx``. Once you have set this up, we can start configuring the logs.
 
 
-To a structure that looks like this:
-
-.. code-block:: bash
-
-    └── myproject
-        ├── config
-        │   ├── __init__.py
-        │   └── settings/
-        │       │   ├── __init__.py
-        │       │   ├── common.py
-        │       │   ├── dev.py
-        │       │   ├── prod.py
-        │   ├── urls.py
-        │   └── wsgi.py
-        ├── manage.py
-
-
-
-
-
-Environment Variables
+How to Configure Logs
 ---------------------
 
-Environment Variables is an approach that was popularized by `12 Factor App`_. When it comes to your apps configuration settings, 12 Factor wants this:
+For Django, logs are setup inside of the ``settings.py`` file.  For us, this file is ``config/base.py``.  I suggest you review the setup that I have in my example folder **p_06** to see what it looks like.  See the follow notes to understand what they are doing:
 
-.. epigraph::
+LOG_DIR : settings variable
+    This holds the path to our logs directory.
 
-   ...strict separation of config from code. Config varies substantially across deploys, code does not.
+FORMATTERS: log parameter
+    This actually defines what our logs are going to look like when they are outputted.
 
-In other words, don't do this when your in development:
+HANDLERS : log parameter
+    We defined three different ones:  ``console``, ``mail_admins``, ``file_error``.  This tells the logs where to go.  ``console`` means we see the error outputed to our console. This means it is temporary.  ``file_error`` logs the error to a file called ``django_error.log`.
 
-.. code-block:: python
-
-    DEBUG = True;
-
-And then when you go into production change it to this:
-
-.. code-block:: python
-
-    DEBUG = False;
-
-Do this...always:
-
-.. code-block:: python
-
-    DEBUG = env.bool("DJANGO_DEBUG", default=True)
-
-With the above, I never have to change this line of code.  This is what *12 Factor* means when it says *config varies...code does not*.  In this case, *config* means the value we give to ``DJANGO_DEBUG``.  Lucky for us, the Django community has made it easy to achieve this.
-
-I recommend using `Django Environ`_ to make achieving *12 Factor* easier [4]_.  We start by going into our ``common.py`` and add a ``ROOT_DIR``, ``APPS_DIR`` and ``env`` variable.  They look like this:
-
-.. code-block:: python
-
-    import environ
-
-    ROOT_DIR = environ.Path(__file__) - 3  # (/a/b/myfile.py - 4 = /)
-    APPS_DIR = ROOT_DIR.path('{{ cookiecutter.project_name }}')
+LOGGERS : log parameter
+     A category that tells the logger what types of messages to report and where.  The most pertinent one for us is ``development`` which will debug everything from level ``DEBUG`` up and send those messaged to the ``console``.
 
 
-    env = environ.Env()
 
-ROOT_DIR is the path to the root of your project.  The fourth line, ``env``, is a class that lets us define variables and their default values.  Without going over everything, because you can read through the code in this cookiecutter, here are some common ways to set values with *Django Environ*.
-
-Database connection string
-
-.. code-block:: python
-
-    env.db("DATABASE_URL", default="postgres://dev:dev-password@localhost/myproject")
-
-Path to your static files
-
-.. code-block:: python
-
-    str(APPS_DIR.path('static'))
-
-
-Build a general variable
-
-.. code-block:: python
-
-    SECRET_KEY = env("DJANGO_SECRET_KEY", default='CHANGEME!!!')
-
-
-Which Settings Go In Which Settings File?
------------------------------------------
-
-If you review my setup, you will begin to see that the rule of thumb is this:  If it can be shared in development and production, it goes in ``common.py``.  However, if it is something only used in ``development`` or ``production`` it should only go into it's respective file.
-
-For example, I use `Django Nose`_ to test my python code.  I am never going to install this on production, so it goes into ``dev.py``.  There are exceptions to this rule, but generally speaking this applies well across the board.
-
-At this point you should have a good understanding of how to split settings files and what the environment variables are doing.  I did not review how to read the environment variables yet, but I will add this in an update.
-
-.. [1] `Multiple Settings Files`_ starts at slide 65.
-.. [2] There are a lot of article on this, but some of the best ones are
-
-    * `The Best and Worst of Django`_
-    * `Django Stop Writing Settings Files`_
-    * `Secrets in the Environment`_
-    * `Perfeect Django Settings Files`_
-.. [3] The ``__init__.py`` file is what turns directory into a package.
-.. [4] Note that you have to ``pip install django-environ``.
-
-.. _Zen of Python: https://www.python.org/dev/peps/pep-0020/
-.. _Multiple Settings Files: https://speakerdeck.com/jacobian/the-best-and-worst-of-django?slide=81
-.. _`The Best and Worst of Django`: https://speakerdeck.com/jacobian/the-best-and-worst-of-django?slide=81
-.. _`Django Stop Writing Settings Files`: http://bruno.im/2013/may/18/django-stop-writing-settings-files/
-.. _`Secrets in the Environment`: http://heldercorreia.com/blog/secrets-in-the-environment#id6
-.. _`Perfeect Django Settings Files`: https://www.rdegges.com/2011/the-perfect-django-settings-file/
-.. _12 Factor App: http://12factor.net/config
-.. _Django Environ: https://github.com/joke2k/django-environ
-.. _Django Nose: https://github.com/django-nose/django-nose
 

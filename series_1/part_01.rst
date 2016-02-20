@@ -2,7 +2,7 @@
 PART 1
 ******
 
-Welcome to the first of an 11 part series focusing on setting up a Django development environment.  This part of the series is going to focus on setting up a virtual machine for for your Project.
+Welcome to the first of an 8 part series focusing on setting up a Django development environment.  This part of the series is going to focus on setting up a virtual machine for for your Project.
 
 For those that do now know, A Virtual Machine (VM) is software that allows you to run oher operating systems on your computer in a separate window.  For example, your main machine is OSX, but you need to use Linux.  You can create a Virtual Machine and install Linux on it.
 
