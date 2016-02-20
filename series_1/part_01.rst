@@ -88,8 +88,11 @@ This is us telling our local machine to share it's ssh keys with our Vagrant mac
 
 .. code-block:: ruby
 
-    vb.memory = 2028
-    vb.cpus = 2
+    # Set the amount of memory and cpus allocated to your VM
+    config.vm.provider :virtualbox do |vb|
+      vb.memory = 2048
+      vb.cpus = 2
+    end
 
 These are some helper functions defined by Vagrant.  They allow us to tell the virtual machine how much RAM and CPU's they have access too.  Depending on what you are running on the VM, you may need to bump this up. 2GB is usually enough for most things.  Now we can actually run our vagrant machine and see if everything worked:
 
