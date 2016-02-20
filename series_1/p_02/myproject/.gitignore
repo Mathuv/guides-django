@@ -1,0 +1,5 @@
+# sqlite3
+/myproject/db.sqlite3
+
+# virtual environments
+/.vagrant
