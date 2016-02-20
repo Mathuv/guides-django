@@ -116,17 +116,23 @@ We are going to set some environment variables inside of our ``.bashrc`` startup
 
 .. code-block:: bash
 
+    # DJANGO + PYTHON ENVIRONMENT VARIABLES
+    workon myproject
     export PYTHONPATH="$PYTHONPATH:/home/vagrant/myproject/server"
-    export DJANGO_SETTINGS_MODULE="config.settings.dev"
+    export DJANGO_SETTINGS_MODULE="server.settings"
     export PYTHONDONTWRITEBYTECODE=1
 
 The ``PYTHONPATH`` tells python where to find Python modules.  It is important to understand this, so I recommend reading about it and ``DJANGO_SETTINGS_MODULE`` tells django which settings file to use.  The combination of the above means we can replace ``python manage.py`` with ``django-admin``.  This also allows us to access Django packages and use in other applications.
 
 ``PYTHONDONTWRITEBYTECODE`` is us telling python that we do not want it to generate .pyc files.  This is helpful to avoid strange little problems in the future.
 
-That brings us to the end of setting up our Django project inside of our VM.
+We can activate these settings by reloading ``.bashrc``
 
+.. code-block:: bash
 
+    source ~/.bashrc
+
+That brings us to the end of this section.
 
 .. _a few different ways to setup your Django environment:  https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-ubuntu-14-04
 .. _difference between the two: https://docs.python.org/3.4/installing/
