@@ -12,7 +12,7 @@ This repo contains guides which outline the design decisions and steps involved 
 series 1
 ++++++++
 
-Series 1 covers the process involved in creating `django starter`.  It consists of 11 parts that breakdown everything that was done and why.
+Series 1 covers the process involved in creating `django starter`.  It consists of 8 parts that breakdown everything that was done and why.
 
 `Part 1`_
 
@@ -45,6 +45,7 @@ Tests
 `Part 8`_
 
 Documentation
+
 
 series 2
 ++++++++
