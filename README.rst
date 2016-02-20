@@ -16,47 +16,35 @@ Series 1 covers the process involved in creating `django starter`.  It consists 
 
 `Part 1`_
 
-Vagrant and Django
+Setting up Vagrant
 
 `Part 2`_
 
-Provisioning Vagrant
+Installing Django
 
 `Part 3`_
 
-Intermediate Provisioning with Vagrant
+Installing Postgres
 
 `Part 4`_
 
-Django + Vagrant w/ Cookiecutter
+Multiple Settings Files + Environment Variables
 
 `Part 5`_
 
-Part 4 + Project Layout w/ Cookiecutter
+Multiple Requirements Files
 
 `Part 6`_
 
-Part 5 + 12 Factor App Envrionment Variables and Django Settings w/ Cookicutter
+Logs
 
 `Part 7`_
 
-Part 6 + Postgres Database Setup w/ Cookiecutter
+Tests
 
 `Part 8`_
 
-Part 7 + Multiple Database Support w/ Cookiecutter
-
-`Part 9`_
-
-Part 8 + Collaboration files and documentation support
-
-`Part 10`_
-
-Part 9 + Advanced Django Settings - PYTHONPATH, .PYC files, Automate createsuperuser and Python 2 and Python 3 virtualenvironments
-
-`Part 11`_
-
-Part 10 + test framework (nose) and coverage report (coverage.py)
+Documentation
 
 series 2
 ++++++++
