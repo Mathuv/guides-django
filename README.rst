@@ -50,7 +50,7 @@ Documentation
 series 2
 ++++++++
 
-Series 2 shows users how to take an existing Django project and add Wagtail.  This series uses `django starter`_ as the template to be modified, howevver, these steps can be applied to any Django project
+Series 2 shows users how to take an existing Django project and add Wagtail.  This series picks up where `django starter`_ left off.  However, the great part about Wagtail is that these steps can be applied to most any Django project using correct versions.
 
 `series 2`_
 
