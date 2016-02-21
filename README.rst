@@ -12,7 +12,7 @@ This repo contains guides which outline the design decisions and steps involved 
 series 1
 ++++++++
 
-Series 1 covers the process involved in creating `django starter`.  It consists of 9 parts that breakdown everything that was done and why.  Part 9 shows you how to configure your project to use Wagtail.  It is optional, so don't feel the need to do it if your not planning on working with wagtail.
+Series 1 covers the process involved in creating `django starter`.  It consists of 9 parts that breakdown everything that was done and why.
 
 `Part 1`_
 
@@ -46,16 +46,26 @@ Tests
 
 Documentation
 
-`Part 9`_ * Optional
-
-Wagtail
-
 Series 2
 ++++++++
 
-`S2 - Part 1`_
+Series 2 is going to build on what we learned in `series 1`_.  The goal is to show you how to configure an existing Django project, the one we built in series 1, to use Wagtail.  This guide will walk you through the configuration process, creating your first page, and configuring a new site in Wagtail.
 
-Seires 2 is going to explore how to add a modern front end tooling system to Django using Gulp, Webpack and BrowserSync.  This series will pick up where I left off in `Part 9`_ of `Series 1`_.  We will use that project layout.
+`S2 Part 1`_
+
+Configure Django Project to Use Wagtail
+
+`S2 Part 2`_
+
+Create a New Page Class
+
+`S2 Part 3`_
+
+Create a Template for your new Page Class
+
+`S2 Part 4`_
+
+Create a new Site in Wagtail Admin
 
 
 Who is this for?
@@ -97,5 +107,7 @@ I am a believer in the community creating things together. If you are reading th
 .. _Part 10: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_10.rst
 .. _Part 11: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_11.rst
 .. _Series 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_2/part_01.rst
-
-.._S2 - Part 1: http://google.ca
+.. _S2 Part 1: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_01.rst
+.. _S2 Part 2: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_02.rst
+.. _S2 Part 3: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_03.rst
+.. _S2 Part 4: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_04.rst
