@@ -12,7 +12,7 @@ This repo contains guides which outline the design decisions and steps involved 
 series 1
 ++++++++
 
-Series 1 covers the process involved in creating `django starter`.  It consists of 9 parts that breakdown everything that was done and why.  Part 9 is shows you how to configure your project to use Wagtail.  It is optional, so don't feel the need to do it if your not planning on doing wagtail.
+Series 1 covers the process involved in creating `django starter`.  It consists of 9 parts that breakdown everything that was done and why.  Part 9 shows you how to configure your project to use Wagtail.  It is optional, so don't feel the need to do it if your not planning on working with wagtail.
 
 `Part 1`_
 
