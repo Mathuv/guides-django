@@ -50,6 +50,13 @@ Documentation
 
 Wagtail
 
+Series 2
+++++++++
+
+`S2 - Part 1`_
+
+Seires 2 is going to explore how to add a modern front end tooling system to Django using Gulp, Webpack and BrowserSync.  This series will pick up where I left off in `Part 9`_ of `Series 1`_.  We will use that project layout.
+
 
 Who is this for?
 ================
@@ -90,3 +97,5 @@ I am a believer in the community creating things together. If you are reading th
 .. _Part 10: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_10.rst
 .. _Part 11: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_11.rst
 .. _Series 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_2/part_01.rst
+
+.._S2 - Part 1: http://google.ca
