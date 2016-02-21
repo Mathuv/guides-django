@@ -67,6 +67,10 @@ Create a Template for your new Page Class
 
 Create a new Site in Wagtail Admin
 
+`S2 Part 5`_
+
+Create Static Files
+
 
 Who is this for?
 ================
@@ -111,3 +115,4 @@ I am a believer in the community creating things together. If you are reading th
 .. _S2 Part 2: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_02.rst
 .. _S2 Part 3: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_03.rst
 .. _S2 Part 4: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_04.rst
+.. _S2 Part 5: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_05.rst
