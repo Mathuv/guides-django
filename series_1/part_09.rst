@@ -1,5 +1,5 @@
 ******
-Part 1
+Part 9
 ******
 
 `Wagtail`_ is a great Django CMS built by `Torchbox`_.  I use Wagtail for a lot of my projects which is why I wanted to write a `Cookiecutter` for it.  Wagtail actually has a really great example of `how to add wagtail`_ to your existing projects.  I will be doing something similar in this project, but instead of using the `startproject` template, I will be using a custom Django template that I use as a starting point for my Django projects.

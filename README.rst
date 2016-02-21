@@ -78,15 +78,15 @@ I am a believer in the community creating things together. If you are reading th
 
 .. _django starter: https://github.com/tkjone/django-starter
 .. _django wagtail starter: https://github.com/tkjone/django-wagtail-starter
-.. _Part 1: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_01.md
-.. _Part 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_02.md
-.. _Part 3: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_03.md
-.. _Part 4: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_04.md
-.. _Part 5: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_05.md
-.. _Part 6: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_06.md
-.. _Part 7: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_07.md
-.. _Part 8: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_08.md
-.. _Part 9: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_09.md
-.. _Part 10: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_10.md
-.. _Part 11: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_11.md
+.. _Part 1: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_01.rst
+.. _Part 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_02.rst
+.. _Part 3: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_03.rst
+.. _Part 4: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_04.rst
+.. _Part 5: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_05.rst
+.. _Part 6: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_06.rst
+.. _Part 7: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_07.rst
+.. _Part 8: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_08.rst
+.. _Part 9: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_09.rst
+.. _Part 10: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_10.rst
+.. _Part 11: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_1/part_11.rst
 .. _Series 2: https://github.com/tkjone/django-starters/blob/django-starters-1.9.x/series_2/part_01.rst
