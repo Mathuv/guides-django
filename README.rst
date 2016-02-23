@@ -71,6 +71,11 @@ Create a new Site in Wagtail Admin
 
 Create Static Files
 
+series 3
+++++++++
+
+Series 3 is going to explore setting up Gulp, Webpack and BrowserSync with Django.
+
 
 Who is this for?
 ================

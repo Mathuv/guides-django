@@ -1,0 +1,26 @@
+{% load static wagtailuserbar %}
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>myproject</title>
+        <meta name="description" content="myproject">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="{% static "css/index.css" %}">
+    </head>
+    <body>
+
+        {% wagtailuserbar %}
+
+        {% block content %}
+            <!-- wagtail pages here -->
+        {% endblock content %}
+
+        <script src="{% static "js/index.js" %}"></script>
+
+    </body>
+</html>
+
