@@ -76,6 +76,18 @@ series 3
 
 Series 3 is going to explore setting up Gulp, Webpack and BrowserSync with Django.
 
+`S3 Part 1`_
+
+Setup Node
+
+`S3 Part 2`_
+
+Create a CSS gulp task
+
+`S3 Part 3`_
+
+Create a BrowserSync Task
+
 
 Who is this for?
 ================
@@ -95,7 +107,6 @@ Note on branch strcuture
 ========================
 
 Currently there is a ``master`` branch a ``django-starter-1.9.x`` branch. I have labelled the branches to correspond to the version of Django being used. Thus, when the next version of Django comes out, version 1.10.x it will get it's own branch and the cookiecutters will be updated to use the latest.
-
 
 Community Support
 =================
@@ -121,3 +132,6 @@ I am a believer in the community creating things together. If you are reading th
 .. _S2 Part 3: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_03.rst
 .. _S2 Part 4: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_04.rst
 .. _S2 Part 5: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_2/part_05.rst
+.. _S3 Part 1: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_01.rst
+.. _S3 Part 2: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_02.rst
+.. _S3 Part 3: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_03.rst

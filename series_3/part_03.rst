@@ -140,14 +140,6 @@ This is a little more difficult to demo.  The best thing you can do is hit http:
 
 That is BrowserSync.  In the next series we will take this a step further and incorporate webpack into the mix.
 
-
-
-
-
-
-
-
-
 .. _BrowserSync + Gulp.js: https://www.browsersync.io/docs/gulp/
 .. _Part 2: http: google.ca
 
