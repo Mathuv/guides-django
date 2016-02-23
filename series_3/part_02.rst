@@ -156,7 +156,7 @@ How to use our task
 
 At this point we can use our task like we normally would.  Try to refresh your site now.  If you followed the above, you should get an error that looks like this:
 
-.. image:: ../resources/images/s3-s2-no-build-dir.png
+.. image:: ../resources/images/s3-p2-no-build-dir.png
 
 Lets now run our gulp task.
 
