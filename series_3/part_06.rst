@@ -104,11 +104,3 @@ Figure it out?  The issue is with our ``webpack.config.js``, specifically, eslin
     },
 
 Cools.  That is just about everything.  We have successfully connected ESLINT to webpack and we are now validating for code quality.
-
-
-
-production builds
-
-
-
-cleaning up our gulpfile and more config settings
