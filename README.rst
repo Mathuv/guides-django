@@ -74,7 +74,7 @@ Create Static Files
 series 3
 ++++++++
 
-Series 3 is going to explore setting up Gulp, Webpack and BrowserSync with Django.
+Series 3 is going to explore setting up Gulp, BrowserSync, webpack, es6 and eslint with Django.
 
 `S3 Part 1`_
 
@@ -87,6 +87,18 @@ Create a CSS gulp task
 `S3 Part 3`_
 
 Create a BrowserSync Task
+
+`S3 Part 4`_
+
+Add webpack to browsersync
+
+`S3 Part 5`_
+
+Configure webpack to support es6
+
+`S3 Part 6`_
+
+Configure webpack to lint javascript with eslint
 
 
 Who is this for?
