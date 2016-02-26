@@ -1,0 +1,7 @@
+# Install base requirements first
+-r base.txt
+
+coverage>=4.0.3
+django-extensions>=1.6.1
+django-nose==1.4.2
+django-debug-toolbar>=1.4

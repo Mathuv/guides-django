@@ -10,6 +10,7 @@ This is the first part in the series that shows you how Django, Gulp, Webpack an
 * Initialize package.json
 * Install Gulp
 * Link StyleSheets and JavaScript
+* Add Some JS
 
 A small note.  For this series we are not running node in our VM.  I use it for development and not production.  Thus, I run all my node commands on my local machine.
 
@@ -36,7 +37,6 @@ Setting up Tools Directory
 Our project structure currently looks like this:
 
 .. code-block:: bash
-
 
     └── myproject
         ├── docs
@@ -160,6 +160,38 @@ Let's go inside of ``index.styl`` and add the following css:
     body {
       background-color: pink;
     }
+
+Add some JS
+-----------
+
+We will also setup some simple JS files.  Make your ``static/js`` directory look like this:
+
+.. code-block:: bash
+
+    └── static
+        └── js
+            └── footer.js
+            └── header.js
+            └── index.js
+
+And the following code inside of ``footer.js``
+
+.. code-block:: javascript
+
+    console.log('footer');
+
+And the following code inside of ``header.js``
+
+.. code-block:: javascript
+
+    console.log('header');
+
+And the following code inside of ``index.js``
+
+.. code-block:: javascript
+
+    console.log('App Loaded');
+
 
 Great, that concludes the first part.  Now that everything is installed we can go onto the fun part - automating shit!
 
