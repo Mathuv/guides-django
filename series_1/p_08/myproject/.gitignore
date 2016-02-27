@@ -1,5 +1,41 @@
+#OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# SublimeText
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# Pycharm
+.idea
+
+# Vim
+*~
+*.swp
+*.swo
+
+# npm
+node_modules/
+
+# virtual environments
+.env
+
 # sqlite3
 /myproject/db.sqlite3
+
+# python
+*.py[cod]
+*.pyc
+__pycache__
+
+# static files
+build
 
 # virtual environments
 /.vagrant

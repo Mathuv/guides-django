@@ -8,6 +8,7 @@ To make this process easier, lets divide this into two sections:
 
 * Licenses
 * Documentation Structure
+* gitignore
 
 Licenses
 --------
@@ -78,6 +79,10 @@ These are all the files that help everyone write code that alligns with the visi
 
 That is a good place to start.  No real rules for documentation other then keep it focused and make sure to do it.
 
+gitignore
+---------
+
+We should update our ``.gitignore`` at this point as well.  Currently, it is a little barren.  Please checkout the ``.gitignore`` file and update your accordingly.
 
 .. _Choose a License: http://choosealicense.com/
 .. _Hexo: https://hexo.io/
