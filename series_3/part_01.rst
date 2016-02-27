@@ -6,6 +6,7 @@ This is the first part in the series that shows you how Django, Gulp, Webpack an
 
 * Getting the Project Layout
 * Setting up Tools Directory
+* Move Vagrant directory
 * Installing Node
 * Initialize package.json
 * Updating the .gitignore
@@ -57,6 +58,45 @@ We are going to add a new directory called ``tools`` so your structure should no
         └── vagrant
 
 This new directory is what is going to hold all of our front end build automation tools.
+
+Move Vagrant directory
+----------------------
+
+Vagrant is a tool that I use in development.  We created a new directory called ``tools`` for this very purpose.  Lets put vagrant into the tools directory.
+
+.. code-block:: bash
+
+    └── tools
+        └── vagrant
+
+This change means that we need to reconfigure our ``Vagrantfile`` and ``provision.sh`` file a little:
+
+**Vagrantfile**
+
+.. code-block:: bash
+
+    # before
+    config.vm.provision "shell", path: "vagrant/provision.sh",
+
+    # after
+    config.vm.provision "shell", path: "tools/vagrant/provision.sh",
+
+**provision.sh**
+
+.. code-block:: bash
+
+    # before
+    expect ${repo_dir}/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${os_user}
+
+    # after
+    expect ${repo_dir}/tools/vagrant/expects/set_db.exp ${db_name} ${db_user} ${db_password} ${os_user}
+
+    # before
+    expect ${repo_dir}/vagrant/expects/set_admin.exp ${os_user} ${repo_name} ${repo_dir} ${db_user} admin@gmail.com ${db_password}
+
+    # after
+    expect ${repo_dir}/tools/vagrant/expects/set_admin.exp ${os_user} ${repo_name} ${repo_dir} ${db_user} admin@gmail.com ${db_password}
+
 
 Installing Node
 ---------------
