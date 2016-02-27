@@ -5,10 +5,10 @@ Part 8
 This is the second part of getting our code ready for production.  The last part focused on CSS, this section will focus on prepping our javascript for production.  Review of section points:
 
 * Requirements for production js
-* Create our production js task
-* Configure our production js task
+* Create our production webpack task
+* Configure our production webpack task
 * Tell Gulp about our new task
-* Run production js task
+* Run production webpack task
 
 Requirements for production js
 ------------------------------
@@ -25,8 +25,8 @@ webpack-stream : package
 gutil : package
     Helpful utility package.
 
-Create our production js task
------------------------------
+Create our production webpack task
+----------------------------------
 
 We will start by creating out task.  It will be called ``webpack.js`` and we will add it to the ``tasks`` directory.  It should look like this when done:
 
@@ -41,8 +41,8 @@ We will start by creating out task.  It will be called ``webpack.js`` and we wil
 
 Coolness.  That is all.  Let's start configuring the file.
 
-Create our production js task
------------------------------
+Create our production webpack task
+----------------------------------
 
 Add the following to your ``js-prod.js``.
 
@@ -138,7 +138,7 @@ Go into ``gulpfile.js`` and make the ``tasks`` variable look like this:
         'webpack',
     ];
 
-Run ``js-prod``
+Run ``webpack``
 ---------------
 
 Let's see if everything worked:
