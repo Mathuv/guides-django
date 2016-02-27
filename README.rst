@@ -108,6 +108,10 @@ Create production CSS task
 
 Create production javascript task with webpack
 
+`S3 Part 9`_
+
+Clean up our hardcoded values
+
 
 Who is this for?
 ================
@@ -160,3 +164,4 @@ I am a believer in the community creating things together. If you are reading th
 .. _S3 Part 6: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_06.rst
 .. _S3 Part 7: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_07.rst
 .. _S3 Part 8: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_08.rst
+.. _S3 Part 9: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_09.rst
