@@ -123,7 +123,7 @@ This repo is a way for me to give back to the web development community. For so 
 
 2. **Maintenance:**  The first thing that I do before reading any web development guides is check the date. Is it older than 6 months? 1 year? It may still be useful, but depending on the technology it is likely out of date. This rule does not apply to articles that are sharing patterns or general concepts, but for something like a particular tool in web development, this rule is critical. I don't want that to happen to this repo so I will commit time to creating a process to test the code in this repo every few months to keep it up to date.
 
-Note on branch strcuture
+Note on branch structure
 ========================
 
 Currently there is a ``master`` branch a ``django-starter-1.9.x`` branch. I have labelled the branches to correspond to the version of Django being used. Thus, when the next version of Django comes out, version 1.10.x it will get it's own branch and the cookiecutters will be updated to use the latest.
