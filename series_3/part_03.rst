@@ -101,15 +101,15 @@ Similar to `Part 2`_ we have to tell our gulpfile about our ``browsersync`` task
     });
 
     // task: development
-    gulp.task('development', ['browsersync'], function () {});
+    gulp.task('start', ['browsersync'], function () {});
 
 Lets go over the new parts in the above code:
 
 1.  We import Browsersync
 2.  We added the name ``browsersync`` to our ``tasks`` array.  This lets us import the ``browsersync`` task.
-3.  We create a new task called ``development``.  This task is going to call browsersync.
+3.  We create a new task called ``start``.  This task is going to call browsersync.
 
-.. note:: Why did we create the ``development`` task inside of the ``gulpfile.js`` when all the other tasks are on their own?  I like to think of this as a different type of task.  Each of the tasks in our ``tasks`` directory serve a very clear purpose - they try to do one thing and do it well.  We can then take these tasks and combine them.  I like to combine inside of the ``gulpfile.js``.  Further, this task is called ``development`` because when I run tasks, I like there to only be a handful - a ``development`` task, a ``production`` task and a ``tests`` task.  Also note that you can shorten this to ``dev``.  I named it ``development`` to be very clear on what it does.
+.. note:: Why did we create the ``start`` task inside of the ``gulpfile.js`` when all the other tasks are on their own?  I like to think of this as a different type of task.  Each of the tasks in our ``tasks`` directory serve a very clear purpose - they try to do one thing and do it well.  We can then take these tasks and combine them.  I like to combine inside of the ``gulpfile.js``.  Further, this task is called ``start`` because when I run tasks, I like there to only be a handful - a ``start`` task, a ``build`` task and a ``tests`` task.  Also note that you can shorten this to ``dev``.  I named it ``start`` to be very clear on what it does.
 
 Using the browsersync
 ---------------------
@@ -118,7 +118,7 @@ To use this task all you have to do is run
 
 .. code-block:: bash
 
-    gulp development
+    gulp start
 
 There will be a short pause and then your browser will auto launch and automatically hit browsersync at http://localhost:3000.  You can still hit your Django site at http://localhost:8111, but then you won't benefit from BrowserSync!  What are the benefits?  Lets try them out.
 

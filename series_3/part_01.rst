@@ -13,7 +13,7 @@ This is the first part in the series that shows you how Django, Gulp, Webpack an
 * Link StyleSheets and JavaScript
 * Add Some JS
 
-A small note.  For this series we are not running node in our VM.  I use it for development and not production.  Thus, I run all my node commands on my local machine.
+A small note.  For this series we are not running node in our VM.  I like to run some development tasks on my local, specifically because they are local tasks, not production.
 
 Getting the Project Layout
 --------------------------

@@ -182,11 +182,11 @@ Now that we have that setup, lets try running it
 Working with webpack and browsersync
 ------------------------------------
 
-Notice that we added webpack to ``browsersync.js``?  This means that it is part of that task and we do not have to create a separate task, which means all we have to do is run our development task and everything should work (your Django server also has to be running)
+Notice that we added webpack to ``browsersync.js``?  This means that it is part of that task and we do not have to create a separate task, which means all we have to do is run our start task and everything should work (your Django server also has to be running)
 
 .. code-block:: bash
 
-    gulp development
+    gulp start
 
 Excellent.  If that worked you should see the following in your console:
 

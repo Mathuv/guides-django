@@ -89,7 +89,7 @@ cleaning up our files by building a gulpfile.js config file and multiple webpack
 running some test code
 ----------------------
 
-That is everything we need, now you can run ``gulp development`` and everything should run correctly.  If you were following along with this code you will get an error that looks like this:
+That is everything we need, now you can run ``gulp start`` and everything should run correctly.  If you were following along with this code you will get an error that looks like this:
 
 .. image:: ../resources/images/eslint-error.png
 

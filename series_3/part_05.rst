@@ -81,7 +81,7 @@ With that setup, lets see what we have to do to run this.
 writing es6 code
 -----------------
 
-At this point, everythig will just work.  All you have to do is run your ``gulp development`` command.  You can also test out some ES6 code and watch it work.
+At this point, everythig will just work.  All you have to do is run your ``gulp start`` command.  You can also test out some ES6 code and watch it work.
 
 So for example, if you write this:
 
