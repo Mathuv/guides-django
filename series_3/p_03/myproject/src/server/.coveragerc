@@ -1,6 +1,0 @@
-[run]
-omit = ../*migrations*
-
-[html]
-directory = myproject/tests/report
-title = myproject report

@@ -1,5 +1,0 @@
-# don't commit files in this dir
-*
-
-# keep .gitignore files
-!.gitignore
