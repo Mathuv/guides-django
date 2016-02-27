@@ -100,6 +100,14 @@ Configure webpack to support es6
 
 Configure webpack to lint javascript with eslint
 
+`S3 Part 7`_
+
+Create production CSS task
+
+`S3 Part 8`_
+
+Create production javascript task with webpack
+
 
 Who is this for?
 ================
@@ -150,3 +158,5 @@ I am a believer in the community creating things together. If you are reading th
 .. _S3 Part 4: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_04.rst
 .. _S3 Part 5: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_05.rst
 .. _S3 Part 6: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_06.rst
+.. _S3 Part 7: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_05.rst
+.. _S3 Part 8: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_06.rst
