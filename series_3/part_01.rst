@@ -8,6 +8,7 @@ This is the first part in the series that shows you how Django, Gulp, Webpack an
 * Setting up Tools Directory
 * Installing Node
 * Initialize package.json
+* Updating the .gitignore
 * Install Gulp
 * Link StyleSheets and JavaScript
 * Add Some JS
@@ -97,6 +98,18 @@ We are going to create a package.json file in ``myprojects`` root directory.  To
 A little more about this command and the ``package.json`` file:  The ``-y`` tells npm to create a ``package.json`` with the default settings.  When this file is in a folder, said folder becomes an npm package.  Now a package actually has a very broad definition in the world of NPM, so don't get too hooked up on that.  Essentially, this file contains information about your project like dependencies to install.  Thus, it is similar to python's ``requirements.txt`` file...except ``package.json`` is can do a lot more.
 
 With this complete, let's install our first npm package: Gulp.
+
+Updating the .gitignore
+-----------------------
+
+Lets take a moment and also update our ``.gitignore``.  Update it to include:
+
+.. code-block:: bash
+
+    # static files
+    build
+
+The reason we are not committing build is because this directory holds our static assets like css and js.  These are going to cause problems when we are working with other developers, specifically, you will fight with constant merge conflicts.  Further, we are version controlling our css and js files, we do not need to track compiled code.  `Read this`_ to get more information.
 
 Install Gulp
 ------------
@@ -199,3 +212,5 @@ Great, that concludes the first part.  Now that everything is installed we can g
 .. _cookiecutter: https://cookiecutter.readthedocs.org/en/latest/installation.html
 .. _django-wagtail-starter: https://github.com/tkjone/django-wagtail-starter
 .. _Node Version Manager: https://github.com/creationix/nvm
+.. _Read this: http://deploybot.com/guides/building-assets-with-grunt-or-gulp-during-deployment
+

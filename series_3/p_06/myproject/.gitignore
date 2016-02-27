@@ -1,5 +1,8 @@
 # sqlite3
 /server/db.sqlite3
 
+# static files
+build
+
 # virtual environments
 /.vagrant
