@@ -1,7 +1,7 @@
 import test from 'tape';
 // import clickCounter from '../../src/server/static/js/clickCounter';
 
-test('Count my clicks', function (t) {
+test('Count my clicks', function (expect) {
     const click = clickCounter();
 
     click.click();

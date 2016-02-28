@@ -112,6 +112,10 @@ Create production javascript task with webpack
 
 Clean up our hardcoded values
 
+`S3 Part 10`_
+
+Setup Tape for JS testing
+
 
 Who is this for?
 ================
@@ -165,3 +169,4 @@ I am a believer in the community creating things together. If you are reading th
 .. _S3 Part 7: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_07.rst
 .. _S3 Part 8: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_08.rst
 .. _S3 Part 9: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_09.rst
+.. _S3 Part 10: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_10.rst

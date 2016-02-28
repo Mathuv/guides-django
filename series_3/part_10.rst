@@ -69,7 +69,7 @@ We have added a new directory and this directory holds all of our tests, which m
     const webpackTest = extend(true, {}, common, {
         // extends common.entry
         entry: [
-            'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+            'webpack-hot-middleware/client?reload',
             PATHS.testIndex,
         ],
 
@@ -87,8 +87,8 @@ We have added a new directory and this directory holds all of our tests, which m
             loaders: [
                 {
                     include: [
+                        PATHS.javascripts,
                         PATHS.tests,
-                        PATHS.styles,
                     ],
                 },
             ],
@@ -99,7 +99,6 @@ We have added a new directory and this directory holds all of our tests, which m
             new webpack.HotModuleReplacementPlugin(),
             new webpack.NoErrorsPlugin()
         ]
-    });
 
     module.exports = {
         ...
@@ -154,25 +153,7 @@ Using ``test.js``
 
 Let's run the following:  ``gulp test``
 
-You should get the same screen as we always get, a nice little ``HMR`` console log and not much else.  See, all you did was setup a way to write the tests.  To see if they actually worked, let's write some tests!
+You should get the same screen as we always get, a nice little ``HMR`` console log and not much else.  Nothing should really happen because you haven't actually written any tests. I recommend reading through `Buckle up with Tape`_.  It is a great article that will explore testing with tape.
 
-Write a simple test
--------------------
-
-We will run through some TDD to really see thing in action.  Go into your ``tests/js/index.js`` and add the following:
-
-.. code-block:: javascript
-
-    import test from 'tape';
-    import clickCounter from '../../src/server/static/js/clickCounter';
-
-    test('Count my clicks', function (t) {
-        const click = clickCounter();
-
-        click.click();
-        expect.equal(click.click(), 1, 'I counted to 1');
-        expect.end();
-    });
-
-Now you run ``gulp test``
+.. _Buckle up with Tape: https://medium.com/@MarcFly1103/buckle-up-with-tape-1bd5e9e828#.83caelidv
 
