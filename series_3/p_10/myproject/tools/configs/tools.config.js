@@ -26,7 +26,6 @@ module.exports = {
             css: path.resolve(__dirname, '../../build/css'),
         },
 
-        tasksDir: path.resolve(__dirname, '../tasks'),
-
+        tasksDir: path.resolve(__dirname, '../tasks/'),
     },
 }

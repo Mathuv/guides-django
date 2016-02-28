@@ -15,4 +15,4 @@ tasks.forEach(function(task) {
 });
 
 // task: development
-gulp.task('start', ['browsersync'], function () {});
+gulp.task('start', ['css-dev', 'browsersync'], function () {});

@@ -16,7 +16,7 @@ tasks.forEach(function(task) {
 });
 
 // task: development
-gulp.task('development', ['browsersync'], function () {});
+gulp.task('start', ['css-dev', 'browsersync'], function () {});
 
 // task: build
 gulp.task('build', ['css-prod'], function () {});

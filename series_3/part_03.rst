@@ -101,13 +101,13 @@ Similar to `Part 2`_ we have to tell our gulpfile about our ``browsersync`` task
     });
 
     // task: development
-    gulp.task('start', ['browsersync'], function () {});
+    gulp.task('start', ['css-dev', 'browsersync'], function () {});
 
 Lets go over the new parts in the above code:
 
 1.  We import Browsersync
 2.  We added the name ``browsersync`` to our ``tasks`` array.  This lets us import the ``browsersync`` task.
-3.  We create a new task called ``start``.  This task is going to call browsersync.
+3.  We create a new task called ``start``.  This task is going to call ``css-dev`` and then ``browsersync``.
 
 .. note:: Why did we create the ``start`` task inside of the ``gulpfile.js`` when all the other tasks are on their own?  I like to think of this as a different type of task.  Each of the tasks in our ``tasks`` directory serve a very clear purpose - they try to do one thing and do it well.  We can then take these tasks and combine them.  I like to combine inside of the ``gulpfile.js``.  Further, this task is called ``start`` because when I run tasks, I like there to only be a handful - a ``start`` task, a ``build`` task and a ``tests`` task.  Also note that you can shorten this to ``dev``.  I named it ``start`` to be very clear on what it does.
 
