@@ -179,4 +179,4 @@ I am a believer in the community creating things together. If you are reading th
 .. _S3 Part 8: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_08.rst
 .. _S3 Part 9: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_09.rst
 .. _S3 Part 10: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_10.rst
-.. _S4 Part 1: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_4/part_01.rst
+.. _S4 Part 1: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_4/p_01.rst
