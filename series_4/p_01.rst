@@ -1,0 +1,45 @@
+******
+Part 4
+******
+
+This section is going to show you how to setup your project to use React.  It will cover the following sections:
+
+* Setting up your development environment
+* Required Installs
+* Configuring Webpack
+
+Setting up your development environment
+---------------------------------------
+
+React uses a meta language called ``JSX``.  Asa result, when we are coding, our IDE is not really going to know how to highlight this and it can look wonky.  To fix this, we will tell our IDE of choice, in this example sublime text 3, how to handle this.
+
+1.  With the package manager install ``babel``.
+2.  Go into any ``.js`` file and then click VIEW > SYNTAX > OPEN ALL WITH CURRENT EXTENSION AS... > BABEL
+
+This ensures that the Babel syntax highlighter will be used when we are in JS files.
+
+Required Installs
+-----------------
+
+We now need to install a few things to start using React:
+
+.. code-block:: bash
+
+    npm install --save-dev react react-dom babel-preset-react
+
+The above are the basics and does not include the HMR package for React.  This will come at a later time.
+
+Configuring Webpack
+-------------------
+
+Once the above are installed we are going to tell webpack to handle React files.  Inside of ``webpack.config.js`` go to the ``loaders`` section and modify the ``query.presets`` value to look like this:
+
+.. code-block:: json
+
+    query: {
+        plugins: ['transform-runtime'],
+        presets: ['es2015', 'stage-0', 'react'],
+    }
+
+This tells babel how to process React.  That is all that is needed to setup your project with React.  You can now go about using it in your JS files.
+
