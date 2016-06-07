@@ -142,7 +142,7 @@ I recommend using `Django Environ`_ to make achieving *12 Factor* easier [4]_.  
 
     pip install django-environ
 
-We start by going into our ``common.py`` and add a ``ROOT_DIR``, ``APPS_DIR`` and ``env`` variable.  They look like this:
+We start by going into our ``base.py`` and add a ``ROOT_DIR``, ``APPS_DIR`` and ``env`` variable.  They look like this:
 
 .. code-block:: python
 
@@ -179,7 +179,7 @@ Build a general variable
 Which Settings Go In Which Settings File?
 -----------------------------------------
 
-I am actually going to leave choosing of which settings go where up to you.  If you get confused, take a look at my setup in **p_04**.  You will begin to see that the rule of thumb is this:  If it can be shared in development and production, it goes in ``common.py``.  However, if it is something only used in ``development`` or ``production`` it should only go into it's respective file.
+I am actually going to leave choosing of which settings go where up to you.  If you get confused, take a look at my setup in **p_04**.  You will begin to see that the rule of thumb is this:  If it can be shared in development and production, it goes in ``base.py``.  However, if it is something only used in ``development`` or ``production`` it should only go into it's respective file.
 
 For example, I use `Django Nose`_ to test my python code.  I am never going to install this on production, so it goes into ``dev.py``.  There are exceptions to this rule, but generally speaking this applies well across the board.
 
