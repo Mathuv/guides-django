@@ -148,7 +148,11 @@ Currently there is a ``master`` branch a ``django-starter-1.9.x`` branch. I have
 Community Support
 =================
 
-I am a believer in the community creating things together. If you are reading through anything I have written here and find that it is incorrect, outdated or lacking in proper documentation, please feel free to create an issue or fork this repo and make a PR.
+I am a believer in the community creating things together. If you are reading through anything I have written here and find that it is incorrect, outdated or lacking in proper documentation, please feel free to create an issue or fork this repo and make a PR.  
+
+Just want to rach out to the following for contributing.  Thank you!
+
+`@bdub`_
 
 .. _django starter: https://github.com/tkjone/django-starter
 .. _django wagtail starter: https://github.com/tkjone/django-wagtail-starter
@@ -180,3 +184,5 @@ I am a believer in the community creating things together. If you are reading th
 .. _S3 Part 9: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_09.rst
 .. _S3 Part 10: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_3/part_10.rst
 .. _S4 Part 1: https://github.com/tkjone/guides-django/blob/django-starters-1.9.x/series_4/p_01.rst
+
+.. _`@bdub`: https://github.com/bdub
